@@ -1,0 +1,12 @@
+{
+    "name": "agussuhartono/wpoop",
+    "description": "Wordpress with Object Oriented Programming and autoloading.",
+    "homepage": "https://github.com/agussuhartono/wpoop.git",
+    "license": "GPLv2",
+    "autoload": {
+        "classmap": [
+            "wp-admin/*",
+            "wp-includes/*"
+        ]
+    }
+}

@@ -7,20 +7,167 @@ namespace Composer\Autoload;
 class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 {
     public static $classMap = array (
-        'AMFReader' => __DIR__ . '/../..' . '/wp-includes/ID3/module.audio-video.flv.php',
-        'AMFStream' => __DIR__ . '/../..' . '/wp-includes/ID3/module.audio-video.flv.php',
-        'AVCSequenceParameterSetReader' => __DIR__ . '/../..' . '/wp-includes/ID3/module.audio-video.flv.php',
-        'Automatic_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-automatic-upgrader-skin.php',
-        'Bulk_Plugin_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-bulk-plugin-upgrader-skin.php',
-        'Bulk_Theme_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-bulk-theme-upgrader-skin.php',
-        'Bulk_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-bulk-upgrader-skin.php',
-        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'Core_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-core-upgrader.php',
-        'Custom_Background' => __DIR__ . '/../..' . '/wp-admin/includes/class-custom-background.php',
-        'Custom_Image_Header' => __DIR__ . '/../..' . '/wp-admin/includes/class-custom-image-header.php',
-        'Error' => __DIR__ . '/../..' . '/wp-includes/random_compat/error_polyfill.php',
-        'File_Upload_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-file-upload-upgrader.php',
-        'Gettext_Translations' => __DIR__ . '/../..' . '/wp-includes/pomo/translations.php',
+
+        // CORE : ROOT | /wp-includes/
+
+        'AtomEntry' => __DIR__ . '/../..' . '/wp-includes/atomlib.php',
+        'AtomFeed' => __DIR__ . '/../..' . '/wp-includes/atomlib.php',
+        'AtomParser' => __DIR__ . '/../..' . '/wp-includes/atomlib.php',
+        
+        'MagpieRSS' => __DIR__ . '/../..' . '/wp-includes/rss.php',
+        'RSSCache' => __DIR__ . '/../..' . '/wp-includes/rss.php',
+
+        'POP3' => __DIR__ . '/../..' . '/wp-includes/class-pop3.php',
+
+        'PasswordHash' => __DIR__ . '/../..' . '/wp-includes/class-phpass.php',
+
+        'Requests' => __DIR__ . '/../..' . '/wp-includes/class-requests.php',
+        'Services_JSON' => __DIR__ . '/../..' . '/wp-includes/class-json.php',
+        'Services_JSON_Error' => __DIR__ . '/../..' . '/wp-includes/class-json.php',
+        'SimplePie' => __DIR__ . '/../..' . '/wp-includes/class-simplepie.php',
+
+        'Snoopy' => __DIR__ . '/../..' . '/wp-includes/class-snoopy.php',
+
+        'WP' => __DIR__ . '/../..' . '/wp-includes/class-wp.php',
+        'WP_Admin_Bar' => __DIR__ . '/../..' . '/wp-includes/class-wp-admin-bar.php',
+        'WP_Ajax_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-ajax-response.php',
+
+        'WP_Application_Passwords' => __DIR__ . '/../..' . '/wp-includes/class-wp-application-passwords.php',
+
+        'WP_Block' => __DIR__ . '/../..' . '/wp-includes/class-wp-block.php',
+        'WP_Block_Editor_Context' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-editor-context.php',
+        'WP_Block_List' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-list.php',
+        'WP_Block_Parser' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-parser.php',
+        'WP_Block_Parser_Block' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-parser.php',
+        'WP_Block_Parser_Frame' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-parser.php',
+        'WP_Block_Pattern_Categories_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-pattern-categories-registry.php',
+        'WP_Block_Patterns_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-patterns-registry.php',
+        'WP_Block_Styles_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-styles-registry.php',
+        'WP_Block_Supports' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-supports.php',
+        'WP_Block_Template' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-template.php',
+        'WP_Block_Type' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-type.php',
+        'WP_Block_Type_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-type-registry.php',
+
+        'WP_Comment' => __DIR__ . '/../..' . '/wp-includes/class-wp-comment.php',
+        'WP_Comment_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-comment-query.php',
+
+        'WP_Customize_Control' => __DIR__ . '/../..' . '/wp-includes/class-wp-customize-control.php',                
+        'WP_Customize_Manager' => __DIR__ . '/../..' . '/wp-includes/class-wp-customize-manager.php',        
+        'WP_Customize_Nav_Menus' => __DIR__ . '/../..' . '/wp-includes/class-wp-customize-nav-menus.php',        
+        'WP_Customize_Panel' => __DIR__ . '/../..' . '/wp-includes/class-wp-customize-panel.php',       
+        'WP_Customize_Section' => __DIR__ . '/../..' . '/wp-includes/class-wp-customize-section.php',
+        'WP_Customize_Setting' => __DIR__ . '/../..' . '/wp-includes/class-wp-customize-setting.php',
+
+        'WP_Customize_Widgets' => __DIR__ . '/../..' . '/wp-includes/class-wp-customize-widgets.php',
+        'WP_Date_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-date-query.php',
+
+        'WP_Dependencies' => __DIR__ . '/../..' . '/wp-includes/class-wp-dependencies.php',
+        'WP_Embed' => __DIR__ . '/../..' . '/wp-includes/class-wp-embed.php',
+        'WP_Error' => __DIR__ . '/../..' . '/wp-includes/class-wp-error.php',
+        'WP_Fatal_Error_Handler' => __DIR__ . '/../..' . '/wp-includes/class-wp-fatal-error-handler.php',
+        'WP_Feed_Cache' => __DIR__ . '/../..' . '/wp-includes/class-wp-feed-cache.php',
+        'WP_Feed_Cache_Transient' => __DIR__ . '/../..' . '/wp-includes/class-wp-feed-cache-transient.php',
+
+        'WP_HTTP_Fsockopen' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-streams.php',
+        'WP_HTTP_IXR_Client' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-ixr-client.php',
+        'WP_HTTP_Proxy' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-proxy.php',
+        'WP_HTTP_Requests_Hooks' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-requests-hooks.php',
+        'WP_HTTP_Requests_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-requests-response.php',
+        'WP_HTTP_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-response.php',
+        'WP_Hook' => __DIR__ . '/../..' . '/wp-includes/class-wp-hook.php',
+        'WP_Http' => __DIR__ . '/../..' . '/wp-includes/class-wp-http.php',
+        'WP_Http_Cookie' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-cookie.php',
+        'WP_Http_Curl' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-curl.php',
+        'WP_Http_Encoding' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-encoding.php',
+        'WP_Http_Streams' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-streams.php',
+        'WP_Image_Editor' => __DIR__ . '/../..' . '/wp-includes/class-wp-image-editor.php',
+        'WP_Image_Editor_GD' => __DIR__ . '/../..' . '/wp-includes/class-wp-image-editor-gd.php',
+        'WP_Image_Editor_Imagick' => __DIR__ . '/../..' . '/wp-includes/class-wp-image-editor-imagick.php',
+        
+        'WP_List_Util' => __DIR__ . '/../..' . '/wp-includes/class-wp-list-util.php',
+        'WP_Locale' => __DIR__ . '/../..' . '/wp-includes/class-wp-locale.php',
+        'WP_Locale_Switcher' => __DIR__ . '/../..' . '/wp-includes/class-wp-locale-switcher.php',
+                
+        'WP_MatchesMapRegex' => __DIR__ . '/../..' . '/wp-includes/class-wp-matchesmapregex.php',
+        
+        'WP_Meta_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-meta-query.php',
+        'WP_Metadata_Lazyloader' => __DIR__ . '/../..' . '/wp-includes/class-wp-metadata-lazyloader.php',
+
+        'WP_Network' => __DIR__ . '/../..' . '/wp-includes/class-wp-network.php',
+        'WP_Network_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-network-query.php',
+        'WP_Object_Cache' => __DIR__ . '/../..' . '/wp-includes/class-wp-object-cache.php',
+        'WP_Paused_Extensions_Storage' => __DIR__ . '/../..' . '/wp-includes/class-wp-paused-extensions-storage.php',
+                
+        'WP_Post' => __DIR__ . '/../..' . '/wp-includes/class-wp-post.php',        
+        'WP_Post_Type' => __DIR__ . '/../..' . '/wp-includes/class-wp-post-type.php',
+        
+        'WP_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-query.php',
+
+        'WP_Recovery_Mode' => __DIR__ . '/../..' . '/wp-includes/class-wp-recovery-mode.php',
+        'WP_Recovery_Mode_Cookie_Service' => __DIR__ . '/../..' . '/wp-includes/class-wp-recovery-mode-cookie-service.php',
+        'WP_Recovery_Mode_Email_Service' => __DIR__ . '/../..' . '/wp-includes/class-wp-recovery-mode-email-service.php',
+        'WP_Recovery_Mode_Key_Service' => __DIR__ . '/../..' . '/wp-includes/class-wp-recovery-mode-key-service.php',
+        'WP_Recovery_Mode_Link_Service' => __DIR__ . '/../..' . '/wp-includes/class-wp-recovery-mode-link-service.php',
+        'WP_Rewrite' => __DIR__ . '/../..' . '/wp-includes/class-wp-rewrite.php',
+        'WP_Role' => __DIR__ . '/../..' . '/wp-includes/class-wp-role.php',
+        'WP_Roles' => __DIR__ . '/../..' . '/wp-includes/class-wp-roles.php',
+
+        'WP_Scripts' => __DIR__ . '/../..' . '/wp-includes/class-wp-scripts.php',
+        'WP_Session_Tokens' => __DIR__ . '/../..' . '/wp-includes/class-wp-session-tokens.php',
+
+        'WP_SimplePie_File' => __DIR__ . '/../..' . '/wp-includes/class-wp-simplepie-file.php',
+        'WP_SimplePie_Sanitize_KSES' => __DIR__ . '/../..' . '/wp-includes/class-wp-simplepie-sanitize-kses.php',
+        'WP_Site' => __DIR__ . '/../..' . '/wp-includes/class-wp-site.php',
+        
+        'WP_Site_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-site-query.php',
+
+        'WP_Styles' => __DIR__ . '/../..' . '/wp-includes/class-wp-styles.php',
+        'WP_Tax_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-tax-query.php',
+        'WP_Taxonomy' => __DIR__ . '/../..' . '/wp-includes/class-wp-taxonomy.php',
+        'WP_Term' => __DIR__ . '/../..' . '/wp-includes/class-wp-term.php',
+        'WP_Term_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-term-query.php',
+
+        'WP_Text_Diff_Renderer_Table' => __DIR__ . '/../..' . '/wp-includes/class-wp-text-diff-renderer-table.php',
+        'WP_Text_Diff_Renderer_inline' => __DIR__ . '/../..' . '/wp-includes/class-wp-text-diff-renderer-inline.php',
+        'WP_Textdomain_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-textdomain-registry.php',
+        'WP_Theme' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme.php',
+        
+        'WP_Theme_JSON' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json.php',
+        'WP_Theme_JSON_Data' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json-data.php',
+        'WP_Theme_JSON_Resolver' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json-resolver.php',
+        'WP_Theme_JSON_Schema' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json-schema.php',
+        
+        'WP_User' => __DIR__ . '/../..' . '/wp-includes/class-wp-user.php',
+        'WP_User_Meta_Session_Tokens' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-meta-session-tokens.php',
+        'WP_User_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-query.php',
+        'WP_User_Request' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-request.php',
+        
+        'WP_Widget' => __DIR__ . '/../..' . '/wp-includes/class-wp-widget.php',
+
+        'WP_Widget_Factory' => __DIR__ . '/../..' . '/wp-includes/class-wp-widget-factory.php',        
+
+        'WP_oEmbed' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed.php',
+        'WP_oEmbed_Controller' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed-controller.php',
+        'Walker' => __DIR__ . '/../..' . '/wp-includes/class-wp-walker.php',
+        'Walker_Category' => __DIR__ . '/../..' . '/wp-includes/class-walker-category.php',
+        'Walker_CategoryDropdown' => __DIR__ . '/../..' . '/wp-includes/class-walker-category-dropdown.php',
+
+        'Walker_Comment' => __DIR__ . '/../..' . '/wp-includes/class-walker-comment.php',
+        'Walker_Nav_Menu' => __DIR__ . '/../..' . '/wp-includes/class-walker-nav-menu.php',
+
+
+        'Walker_Page' => __DIR__ . '/../..' . '/wp-includes/class-walker-page.php',
+        'Walker_PageDropdown' => __DIR__ . '/../..' . '/wp-includes/class-walker-page-dropdown.php',
+
+        '_WP_Dependency' => __DIR__ . '/../..' . '/wp-includes/class-wp-dependency.php',
+        '_WP_Editors' => __DIR__ . '/../..' . '/wp-includes/class-wp-editor.php',
+
+        'wp_xmlrpc_server' => __DIR__ . '/../..' . '/wp-includes/class-wp-xmlrpc-server.php',
+        'wpdb' => __DIR__ . '/../..' . '/wp-includes/class-wpdb.php',
+
+        //===================================
+
+        // 3 th Party : PHPMailer | /wp-includes/IXR - full
         'IXR_Base64' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-base64.php',
         'IXR_Client' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-client.php',
         'IXR_ClientMulticall' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-clientmulticall.php',
@@ -31,19 +178,33 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'IXR_Request' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-request.php',
         'IXR_Server' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-server.php',
         'IXR_Value' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-value.php',
-        'Language_Pack_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-language-pack-upgrader.php',
-        'Language_Pack_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-language-pack-upgrader-skin.php',
-        'MO' => __DIR__ . '/../..' . '/wp-includes/pomo/mo.php',
-        'NOOP_Translations' => __DIR__ . '/../..' . '/wp-includes/pomo/translations.php',
+
+        
+
+        // 3 th Party : PHPMailer
         'PHPMailer\\PHPMailer\\Exception' => __DIR__ . '/../..' . '/wp-includes/PHPMailer/Exception.php',
         'PHPMailer\\PHPMailer\\PHPMailer' => __DIR__ . '/../..' . '/wp-includes/PHPMailer/PHPMailer.php',
         'PHPMailer\\PHPMailer\\SMTP' => __DIR__ . '/../..' . '/wp-includes/PHPMailer/SMTP.php',
+
+        // 3 th Party : POMO
+        'Gettext_Translations' => __DIR__ . '/../..' . '/wp-includes/pomo/translations.php',        
+        'MO' => __DIR__ . '/../..' . '/wp-includes/pomo/mo.php',
+        'NOOP_Translations' => __DIR__ . '/../..' . '/wp-includes/pomo/translations.php',
         'PO' => __DIR__ . '/../..' . '/wp-includes/pomo/po.php',
         'POMO_CachedFileReader' => __DIR__ . '/../..' . '/wp-includes/pomo/streams.php',
         'POMO_CachedIntFileReader' => __DIR__ . '/../..' . '/wp-includes/pomo/streams.php',
         'POMO_FileReader' => __DIR__ . '/../..' . '/wp-includes/pomo/streams.php',
         'POMO_Reader' => __DIR__ . '/../..' . '/wp-includes/pomo/streams.php',
         'POMO_StringReader' => __DIR__ . '/../..' . '/wp-includes/pomo/streams.php',
+
+        'Plural_Forms' => __DIR__ . '/../..' . '/wp-includes/pomo/plural-forms.php',
+
+        'Translation_Entry' => __DIR__ . '/../..' . '/wp-includes/pomo/entry.php',
+        'Translations' => __DIR__ . '/../..' . '/wp-includes/pomo/translations.php',
+
+
+
+        // 3 th Party : SODIUM
         'ParagonIE\\Sodium\\Compat' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/namespaced/Compat.php',
         'ParagonIE\\Sodium\\Core\\BLAKE2b' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/namespaced/Core/BLAKE2b.php',
         'ParagonIE\\Sodium\\Core\\ChaCha20' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/namespaced/Core/ChaCha20.php',
@@ -128,11 +289,12 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'ParagonIE_Sodium_Crypto' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/src/Crypto.php',
         'ParagonIE_Sodium_Crypto32' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/src/Crypto32.php',
         'ParagonIE_Sodium_File' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/src/File.php',
-        'PclZip' => __DIR__ . '/../..' . '/wp-admin/includes/class-pclzip.php',
-        'Plugin_Installer_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-plugin-installer-skin.php',
-        'Plugin_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-plugin-upgrader.php',
-        'Plugin_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-plugin-upgrader-skin.php',
-        'Plural_Forms' => __DIR__ . '/../..' . '/wp-includes/pomo/plural-forms.php',
+
+        'SodiumException' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/src/SodiumException.php',
+        'SplFixedArray' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/src/PHP52/SplFixedArray.php',
+
+
+        // 3th Party : SimplePie | /wp-includes/SimplePie/ | full
         'SimplePie_Author' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Author.php',
         'SimplePie_Cache' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Cache.php',
         'SimplePie_Cache_Base' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Cache/Base.php',
@@ -167,8 +329,10 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'SimplePie_Source' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Source.php',
         'SimplePie_XML_Declaration_Parser' => __DIR__ . '/../..' . '/wp-includes/SimplePie/XML/Declaration/Parser.php',
         'SimplePie_gzdecode' => __DIR__ . '/../..' . '/wp-includes/SimplePie/gzdecode.php',
-        'SodiumException' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/src/SodiumException.php',
-        'SplFixedArray' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/src/PHP52/SplFixedArray.php',
+
+
+
+        // 3th Party : Text | /wp-includes/Text/ | full
         'Text_Diff' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php',
         'Text_Diff_Engine_native' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Engine/native.php',
         'Text_Diff_Engine_shell' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Engine/shell.php',
@@ -182,22 +346,21 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'Text_Diff_Renderer' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Renderer.php',
         'Text_Diff_Renderer_inline' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Renderer/inline.php',
         'Text_MappedDiff' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php',
-        'Theme_Installer_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-installer-skin.php',
-        'Theme_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-upgrader.php',
-        'Theme_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-upgrader-skin.php',
-        'Translation_Entry' => __DIR__ . '/../..' . '/wp-includes/pomo/entry.php',
-        'Translations' => __DIR__ . '/../..' . '/wp-includes/pomo/translations.php',
+
+
+
+        // 3th Party : /wp-includes/random_compat/ | full
         'TypeError' => __DIR__ . '/../..' . '/wp-includes/random_compat/error_polyfill.php',
-        'WP_Ajax_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-ajax-upgrader-skin.php',
-        'WP_Application_Passwords_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-application-passwords-list-table.php',
-        'WP_Automatic_Updater' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-automatic-updater.php',
-        'WP_Comments_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-comments-list-table.php',
-        'WP_Community_Events' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-community-events.php',
+        'Error' => __DIR__ . '/../..' . '/wp-includes/random_compat/error_polyfill.php',        
+
+        
+        // 3th Party : /wp-includes/customize/ | full
         'WP_Customize_Background_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-background-image-control.php',
         'WP_Customize_Background_Image_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-background-image-setting.php',
         'WP_Customize_Background_Position_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-background-position-control.php',
         'WP_Customize_Code_Editor_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-code-editor-control.php',
         'WP_Customize_Color_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-color-control.php',
+
         'WP_Customize_Cropped_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-cropped-image-control.php',
         'WP_Customize_Custom_CSS_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-custom-css-setting.php',
         'WP_Customize_Date_Time_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-date-time-control.php',
@@ -205,6 +368,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Customize_Header_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-header-image-control.php',
         'WP_Customize_Header_Image_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-header-image-setting.php',
         'WP_Customize_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-image-control.php',
+
         'WP_Customize_Media_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-media-control.php',
         'WP_Customize_Nav_Menu_Auto_Add_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-auto-add-control.php',
         'WP_Customize_Nav_Menu_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-control.php',
@@ -215,46 +379,38 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Customize_Nav_Menu_Name_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-name-control.php',
         'WP_Customize_Nav_Menu_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-section.php',
         'WP_Customize_Nav_Menu_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-setting.php',
+        
         'WP_Customize_Nav_Menus_Panel' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menus-panel.php',
         'WP_Customize_New_Menu_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-new-menu-control.php',
         'WP_Customize_New_Menu_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-new-menu-section.php',
+
         'WP_Customize_Partial' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-partial.php',
+
         'WP_Customize_Selective_Refresh' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-selective-refresh.php',
+
         'WP_Customize_Sidebar_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-sidebar-section.php',
         'WP_Customize_Site_Icon_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-site-icon-control.php',
         'WP_Customize_Theme_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-theme-control.php',
         'WP_Customize_Themes_Panel' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-themes-panel.php',
         'WP_Customize_Themes_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-themes-section.php',
         'WP_Customize_Upload_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-upload-control.php',
-        'WP_Debug_Data' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-debug-data.php',
-        'WP_Filesystem_Base' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-base.php',
-        'WP_Filesystem_Direct' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-direct.php',
-        'WP_Filesystem_FTPext' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-ftpext.php',
-        'WP_Filesystem_SSH2' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-ssh2.php',
-        'WP_Filesystem_ftpsockets' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-ftpsockets.php',
+
+        'WP_Sidebar_Block_Editor_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-sidebar-block-editor-control.php',
+
+        'WP_Widget_Area_Customize_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-widget-area-customize-control.php',        
+
+        'WP_Widget_Form_Customize_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-widget-form-customize-control.php',
+
+
+        // 3th Party : /wp-includes/html-api/ | full
         'WP_HTML_Attribute_Token' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-attribute-token.php',
         'WP_HTML_Span' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-span.php',
         'WP_HTML_Tag_Processor' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-tag-processor.php',
         'WP_HTML_Text_Replacement' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-text-replacement.php',
-        'WP_Importer' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-importer.php',
-        'WP_Internal_Pointers' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-internal-pointers.php',
-        'WP_Links_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-links-list-table.php',
-        'WP_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-list-table.php',
-        'WP_MS_Sites_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-ms-sites-list-table.php',
-        'WP_MS_Themes_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-ms-themes-list-table.php',
-        'WP_MS_Users_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-ms-users-list-table.php',
-        'WP_Media_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-media-list-table.php',
-        'WP_Nav_Menu_Widget' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-nav-menu-widget.php',
-        'WP_Plugin_Install_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-plugin-install-list-table.php',
-        'WP_Plugins_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-plugins-list-table.php',
-        'WP_Post_Comments_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-post-comments-list-table.php',
-        'WP_Posts_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-posts-list-table.php',
-        'WP_Privacy_Data_Export_Requests_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php',
-        'WP_Privacy_Data_Export_Requests_Table' => __DIR__ . '/../..' . '/wp-admin/includes/deprecated.php',
-        'WP_Privacy_Data_Removal_Requests_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php',
-        'WP_Privacy_Data_Removal_Requests_Table' => __DIR__ . '/../..' . '/wp-admin/includes/deprecated.php',
-        'WP_Privacy_Policy_Content' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-privacy-policy-content.php',
-        'WP_Privacy_Requests_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-privacy-requests-table.php',
+
+
+
+        // CORE : REST-API | wp-includes/rest-api | full
         'WP_REST_Application_Passwords_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php',
         'WP_REST_Attachments_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php',
         'WP_REST_Autosaves_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php',
@@ -301,11 +457,9 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_REST_Users_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php',
         'WP_REST_Widget_Types_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php',
         'WP_REST_Widgets_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php',
-        'WP_Screen' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-screen.php',
-        'WP_Sidebar_Block_Editor_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-sidebar-block-editor-control.php',
-        'WP_Site_Health' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-health.php',
-        'WP_Site_Health_Auto_Updates' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-health-auto-updates.php',
-        'WP_Site_Icon' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-icon.php',
+
+
+        // CORE : SITEMAP | /wp-includes/sitemaps/ | full
         'WP_Sitemaps' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps.php',
         'WP_Sitemaps_Index' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-index.php',
         'WP_Sitemaps_Posts' => __DIR__ . '/../..' . '/wp-includes/sitemaps/providers/class-wp-sitemaps-posts.php',
@@ -315,25 +469,25 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Sitemaps_Stylesheet' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-stylesheet.php',
         'WP_Sitemaps_Taxonomies' => __DIR__ . '/../..' . '/wp-includes/sitemaps/providers/class-wp-sitemaps-taxonomies.php',
         'WP_Sitemaps_Users' => __DIR__ . '/../..' . '/wp-includes/sitemaps/providers/class-wp-sitemaps-users.php',
+
+        // style-engine | /wp-includes/style-engine/ | full
         'WP_Style_Engine' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine.php',
         'WP_Style_Engine_CSS_Declarations' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-css-declarations.php',
         'WP_Style_Engine_CSS_Rule' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-css-rule.php',
         'WP_Style_Engine_CSS_Rules_Store' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-css-rules-store.php',
         'WP_Style_Engine_Processor' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-processor.php',
-        'WP_Terms_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-terms-list-table.php',
-        'WP_Theme_Install_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-theme-install-list-table.php',
-        'WP_Themes_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-themes-list-table.php',
-        'WP_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-upgrader.php',
-        'WP_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-upgrader-skin.php',
-        'WP_User_Search' => __DIR__ . '/../..' . '/wp-admin/includes/deprecated.php',
-        'WP_Users_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-users-list-table.php',
+
+
+        // CORE : Widget | /wp-includes/widgets/ | full
+        'WP_Nav_Menu_Widget' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-nav-menu-widget.php',
+
         'WP_Widget_Archives' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-archives.php',
-        'WP_Widget_Area_Customize_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-widget-area-customize-control.php',
+        
         'WP_Widget_Block' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-block.php',
         'WP_Widget_Calendar' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-calendar.php',
         'WP_Widget_Categories' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-categories.php',
         'WP_Widget_Custom_HTML' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-custom-html.php',
-        'WP_Widget_Form_Customize_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-widget-form-customize-control.php',
+
         'WP_Widget_Links' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-links.php',
         'WP_Widget_Media' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media.php',
         'WP_Widget_Media_Audio' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media-audio.php',
@@ -348,9 +502,9 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Widget_Search' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-search.php',
         'WP_Widget_Tag_Cloud' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-tag-cloud.php',
         'WP_Widget_Text' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-text.php',
-        'Walker_Category_Checklist' => __DIR__ . '/../..' . '/wp-admin/includes/class-walker-category-checklist.php',
-        'Walker_Nav_Menu_Checklist' => __DIR__ . '/../..' . '/wp-admin/includes/class-walker-nav-menu-checklist.php',
-        'Walker_Nav_Menu_Edit' => __DIR__ . '/../..' . '/wp-admin/includes/class-walker-nav-menu-edit.php',
+
+        
+        // /wp-includes/Requests/ | full
         'WpOrg\\Requests\\Auth' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Auth.php',
         'WpOrg\\Requests\\Auth\\Basic' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Auth/Basic.php',
         'WpOrg\\Requests\\Autoload' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Autoload.php',
@@ -415,11 +569,15 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WpOrg\\Requests\\Utility\\CaseInsensitiveDictionary' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Utility/CaseInsensitiveDictionary.php',
         'WpOrg\\Requests\\Utility\\FilteredIterator' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Utility/FilteredIterator.php',
         'WpOrg\\Requests\\Utility\\InputValidator' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Utility/InputValidator.php',
-        '_WP_List_Table_Compat' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-list-table-compat.php',
-        'ftp' => __DIR__ . '/../..' . '/wp-admin/includes/class-ftp.php',
-        'ftp_base' => __DIR__ . '/../..' . '/wp-admin/includes/class-ftp.php',
-        'ftp_pure' => __DIR__ . '/../..' . '/wp-admin/includes/class-ftp-pure.php',
-        'ftp_sockets' => __DIR__ . '/../..' . '/wp-admin/includes/class-ftp-sockets.php',
+
+
+
+
+        // 3th Party: ID3 | /wp-includes/ID3 | full
+        'AMFReader' => __DIR__ . '/../..' . '/wp-includes/ID3/module.audio-video.flv.php',
+        'AMFStream' => __DIR__ . '/../..' . '/wp-includes/ID3/module.audio-video.flv.php',
+        'AVCSequenceParameterSetReader' => __DIR__ . '/../..' . '/wp-includes/ID3/module.audio-video.flv.php',
+
         'getID3' => __DIR__ . '/../..' . '/wp-includes/ID3/getid3.php',
         'getid3_ac3' => __DIR__ . '/../..' . '/wp-includes/ID3/module.audio.ac3.php',
         'getid3_apetag' => __DIR__ . '/../..' . '/wp-includes/ID3/module.tag.apetag.php',
@@ -438,6 +596,103 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'getid3_ogg' => __DIR__ . '/../..' . '/wp-includes/ID3/module.audio.ogg.php',
         'getid3_quicktime' => __DIR__ . '/../..' . '/wp-includes/ID3/module.audio-video.quicktime.php',
         'getid3_riff' => __DIR__ . '/../..' . '/wp-includes/ID3/module.audio-video.riff.php',
+
+        'wp_atom_server' => __DIR__ . '/../..' . '/wp-includes/pluggable-deprecated.php',
+
+
+        // =========== WP-ADMIN =============
+
+        'Automatic_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-automatic-upgrader-skin.php',
+        'Bulk_Plugin_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-bulk-plugin-upgrader-skin.php',
+        'Bulk_Theme_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-bulk-theme-upgrader-skin.php',
+        'Bulk_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-bulk-upgrader-skin.php',
+        'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        'Core_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-core-upgrader.php',
+        'Custom_Background' => __DIR__ . '/../..' . '/wp-admin/includes/class-custom-background.php',
+        'Custom_Image_Header' => __DIR__ . '/../..' . '/wp-admin/includes/class-custom-image-header.php',
+
+
+        
+        'File_Upload_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-file-upload-upgrader.php',
+
+        'Language_Pack_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-language-pack-upgrader.php',
+        'Language_Pack_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-language-pack-upgrader-skin.php',
+
+        'PclZip' => __DIR__ . '/../..' . '/wp-admin/includes/class-pclzip.php',
+        'Plugin_Installer_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-plugin-installer-skin.php',
+        'Plugin_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-plugin-upgrader.php',
+        'Plugin_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-plugin-upgrader-skin.php',
+
+        'Theme_Installer_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-installer-skin.php',
+        'Theme_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-upgrader.php',
+        'Theme_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-upgrader-skin.php',
+
+        'WP_Ajax_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-ajax-upgrader-skin.php',
+        'WP_Application_Passwords_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-application-passwords-list-table.php',
+        'WP_Automatic_Updater' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-automatic-updater.php',
+
+        'WP_Comments_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-comments-list-table.php',
+        'WP_Community_Events' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-community-events.php',
+
+        'WP_Debug_Data' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-debug-data.php',
+
+        'WP_Filesystem_Base' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-base.php',
+        'WP_Filesystem_Direct' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-direct.php',
+        'WP_Filesystem_FTPext' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-ftpext.php',
+        'WP_Filesystem_SSH2' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-ssh2.php',
+        'WP_Filesystem_ftpsockets' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-ftpsockets.php',
+
+        'WP_Importer' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-importer.php',
+        'WP_Internal_Pointers' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-internal-pointers.php',
+        'WP_Links_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-links-list-table.php',
+        'WP_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-list-table.php',
+
+        'WP_MS_Sites_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-ms-sites-list-table.php',
+        'WP_MS_Themes_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-ms-themes-list-table.php',
+        'WP_MS_Users_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-ms-users-list-table.php',
+        
+        'WP_Media_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-media-list-table.php',
+
+        'WP_Plugin_Install_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-plugin-install-list-table.php',
+        'WP_Plugins_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-plugins-list-table.php',
+
+        'WP_Post_Comments_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-post-comments-list-table.php',
+
+        'WP_Posts_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-posts-list-table.php',
+        'WP_Privacy_Data_Export_Requests_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php',
+        'WP_Privacy_Data_Export_Requests_Table' => __DIR__ . '/../..' . '/wp-admin/includes/deprecated.php',
+        'WP_Privacy_Data_Removal_Requests_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php',
+        'WP_Privacy_Data_Removal_Requests_Table' => __DIR__ . '/../..' . '/wp-admin/includes/deprecated.php',
+        'WP_Privacy_Policy_Content' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-privacy-policy-content.php',
+        'WP_Privacy_Requests_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-privacy-requests-table.php',
+
+        'WP_Screen' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-screen.php',
+
+        'WP_Site_Health' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-health.php',
+        'WP_Site_Health_Auto_Updates' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-health-auto-updates.php',
+        'WP_Site_Icon' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-icon.php',
+
+        'WP_Terms_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-terms-list-table.php',
+
+        'WP_Theme_Install_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-theme-install-list-table.php',
+
+        'WP_Themes_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-themes-list-table.php',
+        'WP_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-upgrader.php',
+        'WP_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-upgrader-skin.php',
+
+        'WP_User_Search' => __DIR__ . '/../..' . '/wp-admin/includes/deprecated.php',
+        'WP_Users_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-users-list-table.php',
+
+        'Walker_Category_Checklist' => __DIR__ . '/../..' . '/wp-admin/includes/class-walker-category-checklist.php',        
+        'Walker_Nav_Menu_Checklist' => __DIR__ . '/../..' . '/wp-admin/includes/class-walker-nav-menu-checklist.php',
+        'Walker_Nav_Menu_Edit' => __DIR__ . '/../..' . '/wp-admin/includes/class-walker-nav-menu-edit.php',
+
+        '_WP_List_Table_Compat' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-list-table-compat.php',
+        'ftp' => __DIR__ . '/../..' . '/wp-admin/includes/class-ftp.php',
+        'ftp_base' => __DIR__ . '/../..' . '/wp-admin/includes/class-ftp.php',
+        'ftp_pure' => __DIR__ . '/../..' . '/wp-admin/includes/class-ftp-pure.php',
+        'ftp_sockets' => __DIR__ . '/../..' . '/wp-admin/includes/class-ftp-sockets.php',
+
     );
 
     public static function getInitializer(ClassLoader $loader)

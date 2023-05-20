@@ -3,7 +3,7 @@
         'name' => 'agussuhartono/wpoop',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'cb0f2d575ba5f5ae12c94448d15ec7c7410297b9',
+        'reference' => '039d4ec3b0a9fec72b193b2393c26fccfe13e503',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'agussuhartono/wpoop' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'cb0f2d575ba5f5ae12c94448d15ec7c7410297b9',
+            'reference' => '039d4ec3b0a9fec72b193b2393c26fccfe13e503',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -10,10 +10,16 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         // CORE : ROOT | /wp-includes/
 
+        /**
+         * @deprecated unused 
+         */
         'AtomEntry' => __DIR__ . '/../..' . '/wp-includes/atomlib.php',
         'AtomFeed' => __DIR__ . '/../..' . '/wp-includes/atomlib.php',
         'AtomParser' => __DIR__ . '/../..' . '/wp-includes/atomlib.php',
         
+        /**
+         * @deprecated unused, Use SimplePie (class-simplepie.php) instead 
+         */
         'MagpieRSS' => __DIR__ . '/../..' . '/wp-includes/rss.php',
         'RSSCache' => __DIR__ . '/../..' . '/wp-includes/rss.php',
 

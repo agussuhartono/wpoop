@@ -320,7 +320,6 @@ require ABSPATH . WPINC . '/class-wp-block-patterns-registry.php';
 require ABSPATH . WPINC . '/class-wp-block-styles-registry.php';
 require ABSPATH . WPINC . '/class-wp-block-type-registry.php';
 
-require ABSPATH . WPINC . '/class-wp-block-list.php';
 require ABSPATH . WPINC . '/class-wp-block-parser.php';
 require ABSPATH . WPINC . '/blocks.php';
 require ABSPATH . WPINC . '/blocks/index.php';

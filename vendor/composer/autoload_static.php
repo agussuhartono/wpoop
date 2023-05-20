@@ -51,11 +51,12 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Admin_Bar' => __DIR__ . '/../..' . '/wp-includes/class-wp-admin-bar.php', // OK
         'WP_Ajax_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-ajax-response.php', //OK
         'WP_Application_Passwords' => __DIR__ . '/../..' . '/wp-includes/class-wp-application-passwords.php', // OK
-        
+
         'WP_Block' => __DIR__ . '/../..' . '/wp-includes/class-wp-block.php', // OK
         'WP_Block_Editor_Context' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-editor-context.php', // OK
         
-        'WP_Block_List' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-list.php',
+        'WP_Block_List' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-list.php', // OK
+        
         'WP_Block_Parser' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-parser.php',
         'WP_Block_Parser_Block' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-parser.php',
         'WP_Block_Parser_Frame' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-parser.php',

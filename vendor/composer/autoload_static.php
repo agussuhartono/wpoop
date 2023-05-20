@@ -48,9 +48,9 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         //'Snoopy' => __DIR__ . '/../..' . '/wp-includes/class-snoopy.php',
 
         'WP' => __DIR__ . '/../..' . '/wp-includes/class-wp.php', // OK
-        
-        'WP_Admin_Bar' => __DIR__ . '/../..' . '/wp-includes/class-wp-admin-bar.php',
-        'WP_Ajax_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-ajax-response.php',
+        'WP_Admin_Bar' => __DIR__ . '/../..' . '/wp-includes/class-wp-admin-bar.php', // OK
+
+        'WP_Ajax_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-ajax-response.php', //OK
 
         'WP_Application_Passwords' => __DIR__ . '/../..' . '/wp-includes/class-wp-application-passwords.php',
 

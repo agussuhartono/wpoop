@@ -23,7 +23,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'MagpieRSS' => __DIR__ . '/../..' . '/wp-includes/rss.php',
         'RSSCache' => __DIR__ . '/../..' . '/wp-includes/rss.php',
 
-        'POP3' => __DIR__ . '/../..' . '/wp-includes/class-pop3.php',
+        'POP3' => __DIR__ . '/../..' . '/wp-includes/class-pop3.php', // OK
 
         'PasswordHash' => __DIR__ . '/../..' . '/wp-includes/class-phpass.php',
 

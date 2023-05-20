@@ -25,14 +25,27 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'POP3' => __DIR__ . '/../..' . '/wp-includes/class-pop3.php', // OK
 
-        'PasswordHash' => __DIR__ . '/../..' . '/wp-includes/class-phpass.php',
+        'PasswordHash' => __DIR__ . '/../..' . '/wp-includes/class-phpass.php', // OK
 
+        /**
+         * @deprecated v6.2.0 load from wp-includes/Requests/library/Requests.php
+         * @todo need more exploration
+         */
         'Requests' => __DIR__ . '/../..' . '/wp-includes/class-requests.php',
+
+        /**
+         * @deprecated 5.3.0, now use PHP native JSON extension
+         */
         'Services_JSON' => __DIR__ . '/../..' . '/wp-includes/class-json.php',
         'Services_JSON_Error' => __DIR__ . '/../..' . '/wp-includes/class-json.php',
+
+        // nanti dulu
         'SimplePie' => __DIR__ . '/../..' . '/wp-includes/class-simplepie.php',
 
-        'Snoopy' => __DIR__ . '/../..' . '/wp-includes/class-snoopy.php',
+        /**
+         * @deprecated 3.0.0 and unused. Use WP_HTTP (http.php) instead.
+         */
+        //'Snoopy' => __DIR__ . '/../..' . '/wp-includes/class-snoopy.php',
 
         'WP' => __DIR__ . '/../..' . '/wp-includes/class-wp.php',
         'WP_Admin_Bar' => __DIR__ . '/../..' . '/wp-includes/class-wp-admin-bar.php',

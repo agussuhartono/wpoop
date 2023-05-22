@@ -317,7 +317,6 @@ require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-users.php';
 
 require ABSPATH . WPINC . '/class-wp-block-type.php';
 
-require ABSPATH . WPINC . '/class-wp-block-styles-registry.php';
 require ABSPATH . WPINC . '/class-wp-block-type-registry.php';
 
 require ABSPATH . WPINC . '/blocks.php';

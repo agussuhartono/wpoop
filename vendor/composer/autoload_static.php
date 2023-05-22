@@ -59,9 +59,10 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Block_Parser_Block' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-parser.php', // OK
         'WP_Block_Parser_Frame' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-parser.php', // OK
         'WP_Block_Pattern_Categories_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-pattern-categories-registry.php', // OK
-
         'WP_Block_Patterns_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-patterns-registry.php', // OK
-        'WP_Block_Styles_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-styles-registry.php',
+
+        'WP_Block_Styles_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-styles-registry.php', // OK
+
         'WP_Block_Supports' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-supports.php',
         'WP_Block_Template' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-template.php',
         'WP_Block_Type' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-type.php',

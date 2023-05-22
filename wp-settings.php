@@ -317,12 +317,12 @@ require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-users.php';
 
 require ABSPATH . WPINC . '/class-wp-block-type.php';
 
-require ABSPATH . WPINC . '/class-wp-block-patterns-registry.php';
 require ABSPATH . WPINC . '/class-wp-block-styles-registry.php';
 require ABSPATH . WPINC . '/class-wp-block-type-registry.php';
 
 require ABSPATH . WPINC . '/blocks.php';
 require ABSPATH . WPINC . '/block-pattern-categories-registry.php';
+require ABSPATH . WPINC . '/block-patterns-registry.php';
 
 require ABSPATH . WPINC . '/blocks/index.php';
 require ABSPATH . WPINC . '/block-editor.php';

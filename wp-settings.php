@@ -322,6 +322,7 @@ require ABSPATH . WPINC . '/class-wp-block-type-registry.php';
 require ABSPATH . WPINC . '/blocks.php';
 require ABSPATH . WPINC . '/block-pattern-categories-registry.php';
 require ABSPATH . WPINC . '/block-patterns-registry.php';
+require ABSPATH . WPINC . '/block-supports.php';
 
 require ABSPATH . WPINC . '/blocks/index.php';
 require ABSPATH . WPINC . '/block-editor.php';

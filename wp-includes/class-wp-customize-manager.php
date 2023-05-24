@@ -294,13 +294,7 @@ final class WP_Customize_Manager {
 				$this->$key = (bool) $args[ $key ];
 			}
 		}
-
-		require_once ABSPATH . WPINC . '/class-wp-customize-setting.php';
-		require_once ABSPATH . WPINC . '/class-wp-customize-panel.php';
-		require_once ABSPATH . WPINC . '/class-wp-customize-section.php';
-		require_once ABSPATH . WPINC . '/class-wp-customize-control.php';
-
-
+	
 		/**
 		 * Filters the core Customizer components to load.
 		 *
@@ -321,12 +315,10 @@ final class WP_Customize_Manager {
 		$this->selective_refresh = new WP_Customize_Selective_Refresh( $this );
 
 		if ( in_array( 'widgets', $components, true ) ) {
-			require_once ABSPATH . WPINC . '/class-wp-customize-widgets.php';
 			$this->widgets = new WP_Customize_Widgets( $this );
 		}
 
 		if ( in_array( 'nav_menus', $components, true ) ) {
-			require_once ABSPATH . WPINC . '/class-wp-customize-nav-menus.php';
 			$this->nav_menus = new WP_Customize_Nav_Menus( $this );
 		}
 

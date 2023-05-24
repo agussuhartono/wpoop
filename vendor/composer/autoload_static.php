@@ -62,10 +62,9 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Block_Patterns_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-patterns-registry.php', // OK
         'WP_Block_Styles_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-styles-registry.php', // OK
         'WP_Block_Supports' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-supports.php', // OK
-
         'WP_Block_Template' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-template.php', // OK
-        
-        'WP_Block_Type' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-type.php',
+        'WP_Block_Type' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-type.php', // OK
+
         'WP_Block_Type_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-block-type-registry.php',
 
         'WP_Comment' => __DIR__ . '/../..' . '/wp-includes/class-wp-comment.php',

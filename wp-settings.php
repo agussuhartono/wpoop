@@ -209,7 +209,7 @@ require ABSPATH . WPINC . '/class-walker-category.php';
 require ABSPATH . WPINC . '/class-walker-category-dropdown.php';
 require ABSPATH . WPINC . '/category-template.php';
 require ABSPATH . WPINC . '/comment.php';
-require ABSPATH . WPINC . '/class-wp-comment.php';
+
 require ABSPATH . WPINC . '/class-wp-comment-query.php';
 require ABSPATH . WPINC . '/class-walker-comment.php';
 require ABSPATH . WPINC . '/comment-template.php';

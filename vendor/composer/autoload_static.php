@@ -371,52 +371,52 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'Error' => __DIR__ . '/../..' . '/wp-includes/random_compat/error_polyfill.php',        
 
         
-        // 3th Party : /wp-includes/customize/ | full
-        'WP_Customize_Background_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-background-image-control.php',
-        'WP_Customize_Background_Image_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-background-image-setting.php',
-        'WP_Customize_Background_Position_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-background-position-control.php',
-        'WP_Customize_Code_Editor_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-code-editor-control.php',
-        'WP_Customize_Color_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-color-control.php',
+        // CORE : /wp-includes/customize/ | full
+        'WP_Customize_Background_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-background-image-control.php', // OK
+        'WP_Customize_Background_Image_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-background-image-setting.php',  // OK
+        'WP_Customize_Background_Position_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-background-position-control.php',  // OK
+        'WP_Customize_Code_Editor_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-code-editor-control.php',  // OK
+        'WP_Customize_Color_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-color-control.php',  // OK
 
-        'WP_Customize_Cropped_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-cropped-image-control.php',
-        'WP_Customize_Custom_CSS_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-custom-css-setting.php',
-        'WP_Customize_Date_Time_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-date-time-control.php',
-        'WP_Customize_Filter_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-filter-setting.php',
-        'WP_Customize_Header_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-header-image-control.php',
-        'WP_Customize_Header_Image_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-header-image-setting.php',
-        'WP_Customize_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-image-control.php',
+        'WP_Customize_Cropped_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-cropped-image-control.php',  // OK
+        'WP_Customize_Custom_CSS_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-custom-css-setting.php',  // OK
+        'WP_Customize_Date_Time_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-date-time-control.php',  // OK
+        'WP_Customize_Filter_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-filter-setting.php',  // OK
+        'WP_Customize_Header_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-header-image-control.php',  // OK
+        'WP_Customize_Header_Image_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-header-image-setting.php',  // OK
+        'WP_Customize_Image_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-image-control.php',  // OK
 
-        'WP_Customize_Media_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-media-control.php',
-        'WP_Customize_Nav_Menu_Auto_Add_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-auto-add-control.php',
-        'WP_Customize_Nav_Menu_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-control.php',
-        'WP_Customize_Nav_Menu_Item_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-item-control.php',
-        'WP_Customize_Nav_Menu_Item_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-item-setting.php',
-        'WP_Customize_Nav_Menu_Location_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-location-control.php',
-        'WP_Customize_Nav_Menu_Locations_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-locations-control.php',
-        'WP_Customize_Nav_Menu_Name_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-name-control.php',
-        'WP_Customize_Nav_Menu_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-section.php',
-        'WP_Customize_Nav_Menu_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-setting.php',
+        'WP_Customize_Media_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-media-control.php',  // OK
+        'WP_Customize_Nav_Menu_Auto_Add_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-auto-add-control.php',  // OK
+        'WP_Customize_Nav_Menu_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-control.php',  // OK
+        'WP_Customize_Nav_Menu_Item_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-item-control.php',  // OK
+        'WP_Customize_Nav_Menu_Item_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-item-setting.php',  // OK
+        'WP_Customize_Nav_Menu_Location_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-location-control.php',  // OK
+        'WP_Customize_Nav_Menu_Locations_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-locations-control.php',  // OK
+        'WP_Customize_Nav_Menu_Name_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-name-control.php',  // OK
+        'WP_Customize_Nav_Menu_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-section.php',  // OK
+        'WP_Customize_Nav_Menu_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-setting.php',  // OK
         
-        'WP_Customize_Nav_Menus_Panel' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menus-panel.php',
-        'WP_Customize_New_Menu_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-new-menu-control.php',
-        'WP_Customize_New_Menu_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-new-menu-section.php',
+        'WP_Customize_Nav_Menus_Panel' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menus-panel.php',  // OK
+        'WP_Customize_New_Menu_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-new-menu-control.php',  // OK
+        'WP_Customize_New_Menu_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-new-menu-section.php',  // OK
 
-        'WP_Customize_Partial' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-partial.php',
+        'WP_Customize_Partial' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-partial.php',  // OK
 
-        'WP_Customize_Selective_Refresh' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-selective-refresh.php',
+        'WP_Customize_Selective_Refresh' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-selective-refresh.php',  // OK
 
-        'WP_Customize_Sidebar_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-sidebar-section.php',
-        'WP_Customize_Site_Icon_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-site-icon-control.php',
-        'WP_Customize_Theme_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-theme-control.php',
-        'WP_Customize_Themes_Panel' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-themes-panel.php',
-        'WP_Customize_Themes_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-themes-section.php',
-        'WP_Customize_Upload_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-upload-control.php',
+        'WP_Customize_Sidebar_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-sidebar-section.php',  // OK
+        'WP_Customize_Site_Icon_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-site-icon-control.php',  // OK
+        'WP_Customize_Theme_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-theme-control.php',  // OK
+        'WP_Customize_Themes_Panel' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-themes-panel.php',  // OK
+        'WP_Customize_Themes_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-themes-section.php',  // OK
+        'WP_Customize_Upload_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-upload-control.php',  // OK
 
-        'WP_Sidebar_Block_Editor_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-sidebar-block-editor-control.php',
+        'WP_Sidebar_Block_Editor_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-sidebar-block-editor-control.php',  // OK
 
-        'WP_Widget_Area_Customize_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-widget-area-customize-control.php',        
+        'WP_Widget_Area_Customize_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-widget-area-customize-control.php',      // OK   
 
-        'WP_Widget_Form_Customize_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-widget-form-customize-control.php',
+        'WP_Widget_Form_Customize_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-widget-form-customize-control.php',   // OK
 
 
         // 3th Party : /wp-includes/html-api/ | full

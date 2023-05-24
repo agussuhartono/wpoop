@@ -17,12 +17,6 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'AtomFeed' => __DIR__ . '/../..' . '/wp-includes/atomlib.php',
         'AtomParser' => __DIR__ . '/../..' . '/wp-includes/atomlib.php',
         
-        /**
-         * @deprecated unused, Use SimplePie (class-simplepie.php) instead 
-         */
-        'MagpieRSS' => __DIR__ . '/../..' . '/wp-includes/rss.php',
-        'RSSCache' => __DIR__ . '/../..' . '/wp-includes/rss.php',
-
         'POP3' => __DIR__ . '/../..' . '/wp-includes/class-pop3.php', // OK
 
         'PasswordHash' => __DIR__ . '/../..' . '/wp-includes/class-phpass.php', // OK
@@ -41,11 +35,6 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         // nanti dulu
         'SimplePie' => __DIR__ . '/../..' . '/wp-includes/class-simplepie.php',
-
-        /**
-         * @deprecated 3.0.0 and unused. Use WP_HTTP (http.php) instead.
-         */
-        //'Snoopy' => __DIR__ . '/../..' . '/wp-includes/class-snoopy.php',
 
         'WP' => __DIR__ . '/../..' . '/wp-includes/class-wp.php', // OK
         'WP_Admin_Bar' => __DIR__ . '/../..' . '/wp-includes/class-wp-admin-bar.php', // OK

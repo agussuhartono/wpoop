@@ -36,7 +36,7 @@ return array(
     'Language_Pack_Upgrader' => $baseDir . '/wp-admin/includes/class-language-pack-upgrader.php',
     'Language_Pack_Upgrader_Skin' => $baseDir . '/wp-admin/includes/class-language-pack-upgrader-skin.php',
     'MO' => $baseDir . '/wp-includes/pomo/mo.php',
-    'MagpieRSS' => $baseDir . '/wp-includes/rss.php',
+    
     'NOOP_Translations' => $baseDir . '/wp-includes/pomo/translations.php',
     'PHPMailer\\PHPMailer\\Exception' => $baseDir . '/wp-includes/PHPMailer/Exception.php',
     'PHPMailer\\PHPMailer\\PHPMailer' => $baseDir . '/wp-includes/PHPMailer/PHPMailer.php',
@@ -177,7 +177,6 @@ return array(
     'SimplePie_Source' => $baseDir . '/wp-includes/SimplePie/Source.php',
     'SimplePie_XML_Declaration_Parser' => $baseDir . '/wp-includes/SimplePie/XML/Declaration/Parser.php',
     'SimplePie_gzdecode' => $baseDir . '/wp-includes/SimplePie/gzdecode.php',
-    'Snoopy' => $baseDir . '/wp-includes/class-snoopy.php',
     'SodiumException' => $baseDir . '/wp-includes/sodium_compat/src/SodiumException.php',
     'SplFixedArray' => $baseDir . '/wp-includes/sodium_compat/src/PHP52/SplFixedArray.php',
     'Text_Diff' => $baseDir . '/wp-includes/Text/Diff.php',

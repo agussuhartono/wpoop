@@ -13,11 +13,6 @@
 define( 'object', 'OBJECT' ); // Back compat.
 
 /**
- * @since 2.5.0
- */
-define( 'OBJECT_K', 'OBJECT_K' );
-
-/**
  * @since 0.71
  */
 define( 'ARRAY_A', 'ARRAY_A' );
@@ -47,6 +42,8 @@ class wpdb {
 
 
 	public const OBJECT = 'OBJECT';
+	public const OBJECT_K = 'OBJECT_K';
+
 	/**
 	 * Whether to show SQL/DB errors.
 	 *
@@ -3071,11 +3068,11 @@ class wpdb {
 	 * @since 0.71
 	 *
 	 * @param string $query  SQL query.
-	 * @param string $output Optional. Any of ARRAY_A | ARRAY_N | wpdb::OBJECT | OBJECT_K constants.
+	 * @param string $output Optional. Any of ARRAY_A | ARRAY_N | wpdb::OBJECT | wpdb::OBJECT_K constants.
 	 *                       With one of the first three, return an array of rows indexed
 	 *                       from 0 by SQL result row number. Each row is an associative array
 	 *                       (column => value, ...), a numerically indexed array (0 => value, ...),
-	 *                       or an object ( ->column = value ), respectively. With OBJECT_K,
+	 *                       or an object ( ->column = value ), respectively. With wpdb::OBJECT_K,
 	 *                       return an associative array of row objects keyed by the value
 	 *                       of each row's first column's value. Duplicate keys are discarded.
 	 *                       Default wpdb::OBJECT.
@@ -3098,7 +3095,7 @@ class wpdb {
 		if ( wpdb::OBJECT === $output ) {
 			// Return an integer-keyed array of row objects.
 			return $this->last_result;
-		} elseif ( OBJECT_K === $output ) {
+		} elseif ( wpdb::OBJECT_K === $output ) {
 			// Return an array of row objects with keys from column 1.
 			// (Duplicates are discarded.)
 			if ( $this->last_result ) {

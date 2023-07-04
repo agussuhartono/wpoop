@@ -5709,7 +5709,7 @@ function get_page_by_path( $page_path, $output = wpdb::OBJECT, $post_type = 'pag
 		AND post_type IN ($post_type_in_string)
 	";
 
-	$pages = $wpdb->get_results( $sql, OBJECT_K );
+	$pages = $wpdb->get_results( $sql, wpdb::OBJECT_K );
 
 	$revparts = array_reverse( $parts );
 

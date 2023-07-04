@@ -560,7 +560,7 @@ class WP_Customize_Nav_Menu_Item_Setting extends WP_Customize_Setting {
 			$items = array_filter( $items, '_is_valid_nav_menu_item' );
 		}
 
-		if ( ARRAY_A === $args['output'] ) {
+		if ( wpdb::ARRAY_A === $args['output'] ) {
 			$items = wp_list_sort(
 				$items,
 				array(

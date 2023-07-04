@@ -193,7 +193,7 @@ function wp_update_category( $catarr ) {
 	}
 
 	// First, get all of the original fields.
-	$category = get_term( $cat_id, 'category', ARRAY_A );
+	$category = get_term( $cat_id, 'category', wpdb::ARRAY_A );
 	_make_cat_compat( $category );
 
 	// Escape data pulled from DB.

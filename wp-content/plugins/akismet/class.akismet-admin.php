@@ -498,7 +498,7 @@ class Akismet_Admin {
 	public static function remove_comment_author_url() {
 		if ( !empty( $_POST['id'] ) && check_admin_referer( 'comment_author_url_nonce' ) ) {
 			$comment_id = intval( $_POST['id'] );
-			$comment = get_comment( $comment_id, ARRAY_A );
+			$comment = get_comment( $comment_id, wpdb::ARRAY_A );
 			if ( $comment && current_user_can( 'edit_comment', $comment['comment_ID'] ) ) {
 				$comment['comment_author_url'] = '';
 				do_action( 'comment_remove_author_url' );
@@ -511,7 +511,7 @@ class Akismet_Admin {
 	public static function add_comment_author_url() {
 		if ( !empty( $_POST['id'] ) && !empty( $_POST['url'] ) && check_admin_referer( 'comment_author_url_nonce' ) ) {
 			$comment_id = intval( $_POST['id'] );
-			$comment = get_comment( $comment_id, ARRAY_A );
+			$comment = get_comment( $comment_id, wpdb::ARRAY_A );
 			if ( $comment && current_user_can( 'edit_comment', $comment['comment_ID'] ) ) {
 				$comment['comment_author_url'] = esc_url( $_POST['url'] );
 				do_action( 'comment_add_author_url' );

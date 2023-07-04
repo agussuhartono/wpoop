@@ -1744,7 +1744,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		/** This action is documented in wp-includes/class-wp-xmlrpc-server.php */
 		do_action( 'xmlrpc_call', 'wp.editPost', $args, $this );
 
-		$post = get_post( $post_id, ARRAY_A );
+		$post = get_post( $post_id, wpdb::ARRAY_A );
 
 		if ( empty( $post['ID'] ) ) {
 			return new IXR_Error( 404, __( 'Invalid post ID.' ) );
@@ -1827,7 +1827,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		/** This action is documented in wp-includes/class-wp-xmlrpc-server.php */
 		do_action( 'xmlrpc_call', 'wp.deletePost', $args, $this );
 
-		$post = get_post( $post_id, ARRAY_A );
+		$post = get_post( $post_id, wpdb::ARRAY_A );
 		if ( empty( $post['ID'] ) ) {
 			return new IXR_Error( 404, __( 'Invalid post ID.' ) );
 		}
@@ -1927,7 +1927,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		/** This action is documented in wp-includes/class-wp-xmlrpc-server.php */
 		do_action( 'xmlrpc_call', 'wp.getPost', $args, $this );
 
-		$post = get_post( $post_id, ARRAY_A );
+		$post = get_post( $post_id, wpdb::ARRAY_A );
 
 		if ( empty( $post['ID'] ) ) {
 			return new IXR_Error( 404, __( 'Invalid post ID.' ) );
@@ -2393,7 +2393,7 @@ class wp_xmlrpc_server extends IXR_Server {
 
 		$taxonomy = get_taxonomy( $taxonomy );
 
-		$term = get_term( $term_id, $taxonomy->name, ARRAY_A );
+		$term = get_term( $term_id, $taxonomy->name, wpdb::ARRAY_A );
 
 		if ( is_wp_error( $term ) ) {
 			return new IXR_Error( 500, $term->get_error_message() );
@@ -3121,7 +3121,7 @@ class wp_xmlrpc_server extends IXR_Server {
 
 		// Get the current page based on the 'page_id' and
 		// make sure it is a page and not a post.
-		$actual_page = get_post( $page_id, ARRAY_A );
+		$actual_page = get_post( $page_id, wpdb::ARRAY_A );
 		if ( ! $actual_page || ( 'page' !== $actual_page['post_type'] ) ) {
 			return new IXR_Error( 404, __( 'Sorry, no such page.' ) );
 		}
@@ -3187,7 +3187,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		do_action( 'xmlrpc_call', 'wp.editPage', $args, $this );
 
 		// Get the page data and make sure it is a page.
-		$actual_page = get_post( $page_id, ARRAY_A );
+		$actual_page = get_post( $page_id, wpdb::ARRAY_A );
 		if ( ! $actual_page || ( 'page' !== $actual_page['post_type'] ) ) {
 			return new IXR_Error( 404, __( 'Sorry, no such page.' ) );
 		}
@@ -4084,7 +4084,7 @@ class wp_xmlrpc_server extends IXR_Server {
 			return $this->error;
 		}
 
-		$post = get_post( $post_id, ARRAY_A );
+		$post = get_post( $post_id, wpdb::ARRAY_A );
 		if ( empty( $post['ID'] ) ) {
 			return new IXR_Error( 404, __( 'Invalid post ID.' ) );
 		}
@@ -4951,7 +4951,7 @@ class wp_xmlrpc_server extends IXR_Server {
 			return $this->error;
 		}
 
-		$post_data = get_post( $post_id, ARRAY_A );
+		$post_data = get_post( $post_id, wpdb::ARRAY_A );
 		if ( ! $post_data ) {
 			return new IXR_Error( 404, __( 'Invalid post ID.' ) );
 		}
@@ -5187,7 +5187,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		/** This action is documented in wp-includes/class-wp-xmlrpc-server.php */
 		do_action( 'xmlrpc_call', 'blogger.editPost', $args, $this );
 
-		$actual_post = get_post( $post_id, ARRAY_A );
+		$actual_post = get_post( $post_id, wpdb::ARRAY_A );
 
 		if ( ! $actual_post || 'post' !== $actual_post['post_type'] ) {
 			return new IXR_Error( 404, __( 'Sorry, no such post.' ) );
@@ -5261,7 +5261,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		/** This action is documented in wp-includes/class-wp-xmlrpc-server.php */
 		do_action( 'xmlrpc_call', 'blogger.deletePost', $args, $this );
 
-		$actual_post = get_post( $post_id, ARRAY_A );
+		$actual_post = get_post( $post_id, wpdb::ARRAY_A );
 
 		if ( ! $actual_post || 'post' !== $actual_post['post_type'] ) {
 			return new IXR_Error( 404, __( 'Sorry, no such post.' ) );
@@ -5724,7 +5724,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		/** This action is documented in wp-includes/class-wp-xmlrpc-server.php */
 		do_action( 'xmlrpc_call', 'metaWeblog.editPost', $args, $this );
 
-		$postdata = get_post( $post_id, ARRAY_A );
+		$postdata = get_post( $post_id, wpdb::ARRAY_A );
 
 		/*
 		 * If there is no post data for the give post ID, stop now and return an error.
@@ -6049,7 +6049,7 @@ class wp_xmlrpc_server extends IXR_Server {
 			return $this->error;
 		}
 
-		$postdata = get_post( $post_id, ARRAY_A );
+		$postdata = get_post( $post_id, wpdb::ARRAY_A );
 		if ( ! $postdata ) {
 			return new IXR_Error( 404, __( 'Invalid post ID.' ) );
 		}
@@ -6737,7 +6737,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		/** This action is documented in wp-includes/class-wp-xmlrpc-server.php */
 		do_action( 'xmlrpc_call', 'mt.getTrackbackPings', $post_id, $this );
 
-		$actual_post = get_post( $post_id, ARRAY_A );
+		$actual_post = get_post( $post_id, wpdb::ARRAY_A );
 
 		if ( ! $actual_post ) {
 			return new IXR_Error( 404, __( 'Sorry, no such post.' ) );
@@ -6794,7 +6794,7 @@ class wp_xmlrpc_server extends IXR_Server {
 		/** This action is documented in wp-includes/class-wp-xmlrpc-server.php */
 		do_action( 'xmlrpc_call', 'mt.publishPost', $args, $this );
 
-		$postdata = get_post( $post_id, ARRAY_A );
+		$postdata = get_post( $post_id, wpdb::ARRAY_A );
 		if ( ! $postdata ) {
 			return new IXR_Error( 404, __( 'Invalid post ID.' ) );
 		}
@@ -7088,7 +7088,7 @@ class wp_xmlrpc_server extends IXR_Server {
 			return $this->pingback_error( 33, __( 'The specified target URL cannot be used as a target. It either does not exist, or it is not a pingback-enabled resource.' ) );
 		}
 
-		$actual_post = get_post( $post_id, ARRAY_A );
+		$actual_post = get_post( $post_id, wpdb::ARRAY_A );
 
 		if ( ! $actual_post ) {
 			// No such post = resource not found.

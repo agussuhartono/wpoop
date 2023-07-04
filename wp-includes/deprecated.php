@@ -1238,7 +1238,7 @@ function gzip_compression() {
  */
 function get_commentdata( $comment_id, $no_cache = 0, $include_unapproved = false ) {
 	_deprecated_function( __FUNCTION__, '2.7.0', 'get_comment()' );
-	return get_comment($comment_id, ARRAY_A);
+	return get_comment($comment_id, wpdb::ARRAY_A);
 }
 
 /**
@@ -2012,7 +2012,7 @@ function get_attachment_innerHTML($id = 0, $fullsize = false, $max_dims = false)
  * @see get_bookmark()
  *
  * @param int    $bookmark_id ID of link
- * @param string $output      Optional. Type of output. Accepts wpdb::OBJECT, ARRAY_N, or ARRAY_A.
+ * @param string $output      Optional. Type of output. Accepts wpdb::OBJECT, ARRAY_N, or wpdb::ARRAY_A.
  *                            Default wpdb::OBJECT.
  * @param string $filter      Optional. How to filter the link for output. Accepts 'raw', 'edit',
  *                            'attribute', 'js', 'db', or 'display'. Default 'raw'.
@@ -3267,7 +3267,7 @@ function image_resize( $file, $max_w, $max_h, $crop = false, $suffix = null, $de
  * @see get_post()
  *
  * @param int $postid Post ID.
- * @param string $mode How to return result, either wpdb::OBJECT, ARRAY_N, or ARRAY_A.
+ * @param string $mode How to return result, either wpdb::OBJECT, ARRAY_N, or wpdb::ARRAY_A.
  * @return WP_Post|null Post object or array holding post contents and information
  */
 function wp_get_single_post( $postid = 0, $mode = wpdb::OBJECT ) {
@@ -4548,7 +4548,7 @@ function _filter_query_attachment_filenames( $clauses ) {
  * @global wpdb $wpdb WordPress database abstraction object.
  *
  * @param string       $page_title Page title.
- * @param string       $output     Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
+ * @param string       $output     Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
  *                                 correspond to a WP_Post object, an associative array, or a numeric array,
  *                                 respectively. Default wpdb::OBJECT.
  * @param string|array $post_type  Optional. Post type or array of post types. Default 'page'.

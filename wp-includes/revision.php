@@ -23,7 +23,7 @@ function _wp_post_revision_fields( $post = array(), $deprecated = false ) {
 	static $fields = null;
 
 	if ( ! is_array( $post ) ) {
-		$post = get_post( $post, ARRAY_A );
+		$post = get_post( $post, wpdb::ARRAY_A );
 	}
 
 	if ( is_null( $fields ) ) {
@@ -74,7 +74,7 @@ function _wp_post_revision_fields( $post = array(), $deprecated = false ) {
  */
 function _wp_post_revision_data( $post = array(), $autosave = false ) {
 	if ( ! is_array( $post ) ) {
-		$post = get_post( $post, ARRAY_A );
+		$post = get_post( $post, wpdb::ARRAY_A );
 	}
 
 	$fields = _wp_post_revision_fields( $post );
@@ -335,7 +335,7 @@ function _wp_put_post_revision( $post = null, $autosave = false ) {
 	if ( is_object( $post ) ) {
 		$post = get_object_vars( $post );
 	} elseif ( ! is_array( $post ) ) {
-		$post = get_post( $post, ARRAY_A );
+		$post = get_post( $post, wpdb::ARRAY_A );
 	}
 
 	if ( ! $post || empty( $post['ID'] ) ) {
@@ -374,7 +374,7 @@ function _wp_put_post_revision( $post = null, $autosave = false ) {
  * @since 2.6.0
  *
  * @param int|WP_Post $post   Post ID or post object.
- * @param string      $output Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
+ * @param string      $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
  *                            correspond to a WP_Post object, an associative array, or a numeric array,
  *                            respectively. Default wpdb::OBJECT.
  * @param string      $filter Optional sanitization filter. See sanitize_post(). Default 'raw'.
@@ -393,7 +393,7 @@ function wp_get_post_revision( &$post, $output = wpdb::OBJECT, $filter = 'raw' )
 
 	if ( wpdb::OBJECT === $output ) {
 		return $revision;
-	} elseif ( ARRAY_A === $output ) {
+	} elseif ( wpdb::ARRAY_A === $output ) {
 		$_revision = get_object_vars( $revision );
 		return $_revision;
 	} elseif ( ARRAY_N === $output ) {
@@ -416,7 +416,7 @@ function wp_get_post_revision( &$post, $output = wpdb::OBJECT, $filter = 'raw' )
  * @return int|false|null Null if error, false if no fields to restore, (int) post ID if success.
  */
 function wp_restore_post_revision( $revision, $fields = null ) {
-	$revision = wp_get_post_revision( $revision, ARRAY_A );
+	$revision = wp_get_post_revision( $revision, wpdb::ARRAY_A );
 
 	if ( ! $revision ) {
 		return $revision;

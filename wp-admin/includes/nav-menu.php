@@ -1165,7 +1165,7 @@ function wp_nav_menu_update_menu_items( $nav_menu_selected_id, $nav_menu_selecte
 		$nav_menu_selected_id,
 		array(
 			'orderby'     => 'ID',
-			'output'      => ARRAY_A,
+			'output'      => wpdb::ARRAY_A,
 			'output_key'  => 'ID',
 			'post_status' => 'draft,publish',
 		)

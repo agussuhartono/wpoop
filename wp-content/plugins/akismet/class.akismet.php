@@ -675,7 +675,7 @@ class Akismet {
 			return new WP_Error( 'akismet-not-configured', __( 'Akismet is not configured. Please enter an API key.', 'akismet' ) );
 		}
 
-		$c = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM {$wpdb->comments} WHERE comment_ID = %d", $id ), ARRAY_A );
+		$c = $wpdb->get_row( $wpdb->prepare( "SELECT * FROM {$wpdb->comments} WHERE comment_ID = %d", $id ), wpdb::ARRAY_A );
 		
 		if ( ! $c ) {
 			return new WP_Error( 'invalid-comment-id', __( 'Comment not found.', 'akismet' ) );

@@ -1063,7 +1063,7 @@ function has_meta( $postid ) {
 			ORDER BY meta_key,meta_id",
 			$postid
 		),
-		ARRAY_A
+		wpdb::ARRAY_A
 	);
 }
 
@@ -1098,7 +1098,7 @@ function update_meta( $meta_id, $meta_key, $meta_value ) {
  * @return void|int|WP_Error Void if nothing fixed. 0 or WP_Error on update failure. The post ID on update success.
  */
 function _fix_attachment_links( $post ) {
-	$post    = get_post( $post, ARRAY_A );
+	$post    = get_post( $post, wpdb::ARRAY_A );
 	$content = $post['post_content'];
 
 	// Don't run if no pretty permalinks or post is not published, scheduled, or privately published.

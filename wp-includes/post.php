@@ -857,7 +857,7 @@ function _wp_relative_upload_path( $path ) {
  * @global WP_Post $post Global post object.
  *
  * @param mixed  $args   Optional. User defined arguments for replacing the defaults. Default empty.
- * @param string $output Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
+ * @param string $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
  *                       correspond to a WP_Post object, an associative array, or a numeric array,
  *                       respectively. Default wpdb::OBJECT.
  * @return WP_Post[]|array[]|int[] Array of post objects, arrays, or IDs, depending on `$output`.
@@ -903,7 +903,7 @@ function get_children( $args = '', $output = wpdb::OBJECT ) {
 
 	if ( wpdb::OBJECT === $output ) {
 		return $kids;
-	} elseif ( ARRAY_A === $output ) {
+	} elseif ( wpdb::ARRAY_A === $output ) {
 		$weeuns = array();
 		foreach ( (array) $kids as $kid ) {
 			$weeuns[ $kid->ID ] = get_object_vars( $kids[ $kid->ID ] );
@@ -978,7 +978,7 @@ function get_extended( $post ) {
  * @param int|WP_Post|null $post   Optional. Post ID or post object. `null`, `false`, `0` and other PHP falsey values
  *                                 return the current global post inside the loop. A numerically valid post ID that
  *                                 points to a non-existent post returns `null`. Defaults to global $post.
- * @param string           $output Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
+ * @param string           $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
  *                                 correspond to a WP_Post object, an associative array, or a numeric array,
  *                                 respectively. Default wpdb::OBJECT.
  * @param string           $filter Optional. Type of filter to apply. Accepts 'raw', 'edit', 'db',
@@ -1012,7 +1012,7 @@ function get_post( $post = null, $output = wpdb::OBJECT, $filter = 'raw' ) {
 
 	$_post = $_post->filter( $filter );
 
-	if ( ARRAY_A === $output ) {
+	if ( wpdb::ARRAY_A === $output ) {
 		return $_post->to_array();
 	} elseif ( ARRAY_N === $output ) {
 		return array_values( $_post->to_array() );
@@ -3048,7 +3048,7 @@ function wp_count_posts( $type = 'post', $perm = '' ) {
 
 	$query .= ' GROUP BY post_status';
 
-	$results = (array) $wpdb->get_results( $wpdb->prepare( $query, $type ), ARRAY_A );
+	$results = (array) $wpdb->get_results( $wpdb->prepare( $query, $type ), wpdb::ARRAY_A );
 	$counts  = array_fill_keys( get_post_stati(), 0 );
 
 	foreach ( $results as $row ) {
@@ -3099,7 +3099,7 @@ function wp_count_attachments( $mime_type = '' ) {
 	$counts = wp_cache_get( $cache_key, 'counts' );
 	if ( false == $counts ) {
 		$and   = wp_post_mime_type_where( $mime_type );
-		$count = $wpdb->get_results( "SELECT post_mime_type, COUNT( * ) AS num_posts FROM $wpdb->posts WHERE post_type = 'attachment' AND post_status != 'trash' $and GROUP BY post_mime_type", ARRAY_A );
+		$count = $wpdb->get_results( "SELECT post_mime_type, COUNT( * ) AS num_posts FROM $wpdb->posts WHERE post_type = 'attachment' AND post_status != 'trash' $and GROUP BY post_mime_type", wpdb::ARRAY_A );
 
 		$counts = array();
 		foreach ( (array) $count as $row ) {
@@ -3923,13 +3923,13 @@ function wp_get_post_terms( $post_id = 0, $taxonomy = 'post_tag', $args = array(
  * @see get_posts()
  *
  * @param array  $args   Optional. Arguments to retrieve posts. Default empty array.
- * @param string $output Optional. The required return type. One of wpdb::OBJECT or ARRAY_A, which
+ * @param string $output Optional. The required return type. One of wpdb::OBJECT or wpdb::ARRAY_A, which
  *                       correspond to a WP_Post object or an associative array, respectively.
- *                       Default ARRAY_A.
+ *                       Default wpdb::ARRAY_A.
  * @return array|false Array of recent posts, where the type of each element is determined
  *                     by the `$output` parameter. Empty array on failure.
  */
-function wp_get_recent_posts( $args = array(), $output = ARRAY_A ) {
+function wp_get_recent_posts( $args = array(), $output = wpdb::ARRAY_A ) {
 
 	if ( is_numeric( $args ) ) {
 		_deprecated_argument( __FUNCTION__, '3.1.0', __( 'Passing an integer number of posts is deprecated. Pass an array of arguments instead.' ) );
@@ -3957,7 +3957,7 @@ function wp_get_recent_posts( $args = array(), $output = ARRAY_A ) {
 	$results = get_posts( $parsed_args );
 
 	// Backward compatibility. Prior to 3.1 expected posts to be returned in array.
-	if ( ARRAY_A === $output ) {
+	if ( wpdb::ARRAY_A === $output ) {
 		foreach ( $results as $key => $result ) {
 			$results[ $key ] = get_object_vars( $result );
 		}
@@ -4757,7 +4757,7 @@ function wp_update_post( $postarr = array(), $wp_error = false, $fire_after_hook
 	}
 
 	// First, get all of the original fields.
-	$post = get_post( $postarr['ID'], ARRAY_A );
+	$post = get_post( $postarr['ID'], wpdb::ARRAY_A );
 
 	if ( is_null( $post ) ) {
 		if ( $wp_error ) {
@@ -5592,7 +5592,7 @@ function get_to_ping( $post ) {
 function trackback_url_list( $tb_list, $post_id ) {
 	if ( ! empty( $tb_list ) ) {
 		// Get post data.
-		$postdata = get_post( $post_id, ARRAY_A );
+		$postdata = get_post( $post_id, wpdb::ARRAY_A );
 
 		// Form an excerpt.
 		$excerpt = strip_tags( $postdata['post_excerpt'] ? $postdata['post_excerpt'] : $postdata['post_content'] );
@@ -5643,7 +5643,7 @@ function get_all_page_ids() {
  * @deprecated 3.5.0 Use get_post()
  *
  * @param int|WP_Post $page   Page object or page ID. Passed by reference.
- * @param string      $output Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
+ * @param string      $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
  *                            correspond to a WP_Post object, an associative array, or a numeric array,
  *                            respectively. Default wpdb::OBJECT.
  * @param string      $filter Optional. How the return value should be filtered. Accepts 'raw',
@@ -5662,7 +5662,7 @@ function get_page( $page, $output = wpdb::OBJECT, $filter = 'raw' ) {
  * @global wpdb $wpdb WordPress database abstraction object.
  *
  * @param string       $page_path Page path.
- * @param string       $output    Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
+ * @param string       $output    Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
  *                                correspond to a WP_Post object, an associative array, or a numeric array,
  *                                respectively. Default wpdb::OBJECT.
  * @param string|array $post_type Optional. Post type or array of post types. Default 'page'.

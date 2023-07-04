@@ -193,7 +193,7 @@ function get_approved_comments( $post_id, $args = array() ) {
  * @global WP_Comment $comment Global comment object.
  *
  * @param WP_Comment|string|int $comment Comment to retrieve.
- * @param string                $output  Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
+ * @param string                $output  Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
  *                                       correspond to a WP_Comment object, an associative array, or a numeric array,
  *                                       respectively. Default wpdb::OBJECT.
  * @return WP_Comment|array|null Depends on $output value.
@@ -226,7 +226,7 @@ function get_comment( $comment = null, $output = wpdb::OBJECT ) {
 
 	if ( wpdb::OBJECT === $output ) {
 		return $_comment;
-	} elseif ( ARRAY_A === $output ) {
+	} elseif ( wpdb::ARRAY_A === $output ) {
 		return $_comment->to_array();
 	} elseif ( ARRAY_N === $output ) {
 		return array_values( $_comment->to_array() );
@@ -2488,7 +2488,7 @@ function wp_update_comment( $commentarr, $wp_error = false ) {
 	global $wpdb;
 
 	// First, get all of the original fields.
-	$comment = get_comment( $commentarr['comment_ID'], ARRAY_A );
+	$comment = get_comment( $commentarr['comment_ID'], wpdb::ARRAY_A );
 
 	if ( empty( $comment ) ) {
 		if ( $wp_error ) {

@@ -1476,7 +1476,7 @@ class WP_Debug_Data {
 
 		$result = $wpdb->get_row(
 			$wpdb->prepare( 'SHOW VARIABLES LIKE %s', $mysql_var ),
-			ARRAY_A
+			wpdb::ARRAY_A
 		);
 
 		if ( ! empty( $result ) && array_key_exists( 'Value', $result ) ) {
@@ -1567,7 +1567,7 @@ class WP_Debug_Data {
 	public static function get_database_size() {
 		global $wpdb;
 		$size = 0;
-		$rows = $wpdb->get_results( 'SHOW TABLE STATUS', ARRAY_A );
+		$rows = $wpdb->get_results( 'SHOW TABLE STATUS', wpdb::ARRAY_A );
 
 		if ( $wpdb->num_rows > 0 ) {
 			foreach ( $rows as $row ) {

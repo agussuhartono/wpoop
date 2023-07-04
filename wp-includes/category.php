@@ -81,7 +81,7 @@ function get_categories( $args = '' ) {
  * @since 1.5.1
  *
  * @param int|object $category Category ID or category row object.
- * @param string     $output   Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
+ * @param string     $output   Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
  *                             correspond to a WP_Term object, an associative array, or a numeric array,
  *                             respectively. Default wpdb::OBJECT.
  * @param string     $filter   Optional. How to sanitize category fields. Default 'raw'.
@@ -116,7 +116,7 @@ function get_category( $category, $output = wpdb::OBJECT, $filter = 'raw' ) {
  *
  * @param string $category_path URL containing category slugs.
  * @param bool   $full_match    Optional. Whether full path should be matched.
- * @param string $output        Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
+ * @param string $output        Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
  *                              correspond to a WP_Term object, an associative array, or a numeric array,
  *                              respectively. Default wpdb::OBJECT.
  * @return WP_Term|array|WP_Error|null Type is based on $output value.
@@ -329,7 +329,7 @@ function get_tags( $args = '' ) {
  * @since 2.3.0
  *
  * @param int|WP_Term|object $tag    A tag ID or object.
- * @param string             $output Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
+ * @param string             $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
  *                                   correspond to a WP_Term object, an associative array, or a numeric array,
  *                                   respectively. Default wpdb::OBJECT.
  * @param string             $filter Optional. How to sanitize tag fields. Default 'raw'.

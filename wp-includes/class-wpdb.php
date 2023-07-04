@@ -15,11 +15,6 @@ define( 'object', 'OBJECT' ); // Back compat.
 /**
  * @since 0.71
  */
-define( 'ARRAY_A', 'ARRAY_A' );
-
-/**
- * @since 0.71
- */
 define( 'ARRAY_N', 'ARRAY_N' );
 
 /**
@@ -40,10 +35,10 @@ define( 'ARRAY_N', 'ARRAY_N' );
 #[AllowDynamicProperties]
 class wpdb {
 
-
 	public const OBJECT = 'OBJECT';
 	public const OBJECT_K = 'OBJECT_K';
-
+	public const ARRAY_A = 'ARRAY_A';
+	
 	/**
 	 * Whether to show SQL/DB errors.
 	 *
@@ -2991,7 +2986,7 @@ class wpdb {
 	 * @since 0.71
 	 *
 	 * @param string|null $query  SQL query.
-	 * @param string      $output Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
+	 * @param string      $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
 	 *                            correspond to an stdClass object, an associative array, or a numeric array,
 	 *                            respectively. Default wpdb::OBJECT.
 	 * @param int         $y      Optional. Row to return. Indexed from 0. Default 0.
@@ -3016,7 +3011,7 @@ class wpdb {
 
 		if ( wpdb::OBJECT === $output ) {
 			return $this->last_result[ $y ] ? $this->last_result[ $y ] : null;
-		} elseif ( ARRAY_A === $output ) {
+		} elseif ( wpdb::ARRAY_A === $output ) {
 			return $this->last_result[ $y ] ? get_object_vars( $this->last_result[ $y ] ) : null;
 		} elseif ( ARRAY_N === $output ) {
 			return $this->last_result[ $y ] ? array_values( get_object_vars( $this->last_result[ $y ] ) ) : null;
@@ -3024,7 +3019,7 @@ class wpdb {
 			// Back compat for wpdb::OBJECT being previously case-insensitive.
 			return $this->last_result[ $y ] ? $this->last_result[ $y ] : null;
 		} else {
-			$this->print_error( ' $db->get_row(string query, output type, int offset) -- Output type must be one of: wpdb::OBJECT, ARRAY_A, ARRAY_N' );
+			$this->print_error( ' $db->get_row(string query, output type, int offset) -- Output type must be one of: wpdb::OBJECT, wpdb::ARRAY_A, ARRAY_N' );
 		}
 	}
 
@@ -3068,7 +3063,7 @@ class wpdb {
 	 * @since 0.71
 	 *
 	 * @param string $query  SQL query.
-	 * @param string $output Optional. Any of ARRAY_A | ARRAY_N | wpdb::OBJECT | wpdb::OBJECT_K constants.
+	 * @param string $output Optional. Any of wpdb::ARRAY_A | ARRAY_N | wpdb::OBJECT | wpdb::OBJECT_K constants.
 	 *                       With one of the first three, return an array of rows indexed
 	 *                       from 0 by SQL result row number. Each row is an associative array
 	 *                       (column => value, ...), a numerically indexed array (0 => value, ...),
@@ -3108,7 +3103,7 @@ class wpdb {
 				}
 			}
 			return $new_array;
-		} elseif ( ARRAY_A === $output || ARRAY_N === $output ) {
+		} elseif ( wpdb::ARRAY_A === $output || ARRAY_N === $output ) {
 			// Return an integer-keyed array of...
 			if ( $this->last_result ) {
 				foreach ( (array) $this->last_result as $row ) {
@@ -3620,7 +3615,7 @@ class wpdb {
 			}
 
 			$this->check_current_query = false;
-			$row                       = $this->get_row( 'SELECT ' . implode( ', ', $sql ), ARRAY_A );
+			$row                       = $this->get_row( 'SELECT ' . implode( ', ', $sql ), wpdb::ARRAY_A );
 			if ( ! $row ) {
 				return new WP_Error( 'wpdb_strip_invalid_text_failure', __( 'Could not strip invalid text.' ) );
 			}

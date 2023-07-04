@@ -857,7 +857,7 @@ function _wp_relative_upload_path( $path ) {
  * @global WP_Post $post Global post object.
  *
  * @param mixed  $args   Optional. User defined arguments for replacing the defaults. Default empty.
- * @param string $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
+ * @param string $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or wpdb::ARRAY_N, which
  *                       correspond to a WP_Post object, an associative array, or a numeric array,
  *                       respectively. Default wpdb::OBJECT.
  * @return WP_Post[]|array[]|int[] Array of post objects, arrays, or IDs, depending on `$output`.
@@ -909,7 +909,7 @@ function get_children( $args = '', $output = wpdb::OBJECT ) {
 			$weeuns[ $kid->ID ] = get_object_vars( $kids[ $kid->ID ] );
 		}
 		return $weeuns;
-	} elseif ( ARRAY_N === $output ) {
+	} elseif ( wpdb::ARRAY_N === $output ) {
 		$babes = array();
 		foreach ( (array) $kids as $kid ) {
 			$babes[ $kid->ID ] = array_values( get_object_vars( $kids[ $kid->ID ] ) );
@@ -978,7 +978,7 @@ function get_extended( $post ) {
  * @param int|WP_Post|null $post   Optional. Post ID or post object. `null`, `false`, `0` and other PHP falsey values
  *                                 return the current global post inside the loop. A numerically valid post ID that
  *                                 points to a non-existent post returns `null`. Defaults to global $post.
- * @param string           $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
+ * @param string           $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or wpdb::ARRAY_N, which
  *                                 correspond to a WP_Post object, an associative array, or a numeric array,
  *                                 respectively. Default wpdb::OBJECT.
  * @param string           $filter Optional. Type of filter to apply. Accepts 'raw', 'edit', 'db',
@@ -1014,7 +1014,7 @@ function get_post( $post = null, $output = wpdb::OBJECT, $filter = 'raw' ) {
 
 	if ( wpdb::ARRAY_A === $output ) {
 		return $_post->to_array();
-	} elseif ( ARRAY_N === $output ) {
+	} elseif ( wpdb::ARRAY_N === $output ) {
 		return array_values( $_post->to_array() );
 	}
 
@@ -5643,7 +5643,7 @@ function get_all_page_ids() {
  * @deprecated 3.5.0 Use get_post()
  *
  * @param int|WP_Post $page   Page object or page ID. Passed by reference.
- * @param string      $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
+ * @param string      $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or wpdb::ARRAY_N, which
  *                            correspond to a WP_Post object, an associative array, or a numeric array,
  *                            respectively. Default wpdb::OBJECT.
  * @param string      $filter Optional. How the return value should be filtered. Accepts 'raw',
@@ -5662,7 +5662,7 @@ function get_page( $page, $output = wpdb::OBJECT, $filter = 'raw' ) {
  * @global wpdb $wpdb WordPress database abstraction object.
  *
  * @param string       $page_path Page path.
- * @param string       $output    Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
+ * @param string       $output    Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or wpdb::ARRAY_N, which
  *                                correspond to a WP_Post object, an associative array, or a numeric array,
  *                                respectively. Default wpdb::OBJECT.
  * @param string|array $post_type Optional. Post type or array of post types. Default 'page'.

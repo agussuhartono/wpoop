@@ -374,7 +374,7 @@ function _wp_put_post_revision( $post = null, $autosave = false ) {
  * @since 2.6.0
  *
  * @param int|WP_Post $post   Post ID or post object.
- * @param string      $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
+ * @param string      $output Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or wpdb::ARRAY_N, which
  *                            correspond to a WP_Post object, an associative array, or a numeric array,
  *                            respectively. Default wpdb::OBJECT.
  * @param string      $filter Optional sanitization filter. See sanitize_post(). Default 'raw'.
@@ -396,7 +396,7 @@ function wp_get_post_revision( &$post, $output = wpdb::OBJECT, $filter = 'raw' )
 	} elseif ( wpdb::ARRAY_A === $output ) {
 		$_revision = get_object_vars( $revision );
 		return $_revision;
-	} elseif ( ARRAY_N === $output ) {
+	} elseif ( wpdb::ARRAY_N === $output ) {
 		$_revision = array_values( get_object_vars( $revision ) );
 		return $_revision;
 	}

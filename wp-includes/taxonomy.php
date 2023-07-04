@@ -917,7 +917,7 @@ function get_tax_sql( $tax_query, $primary_table, $primary_id_column ) {
  *                                     will apply filters and return a `WP_Term` object with the `$term` data.
  *                                     If `WP_Term`, will return `$term`.
  * @param string             $taxonomy Optional. Taxonomy name that `$term` is part of.
- * @param string             $output   Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
+ * @param string             $output   Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or wpdb::ARRAY_N, which
  *                                     correspond to a WP_Term object, an associative array, or a numeric array,
  *                                     respectively. Default wpdb::OBJECT.
  * @param string             $filter   Optional. How to sanitize term fields. Default 'raw'.
@@ -998,7 +998,7 @@ function get_term( $term, $taxonomy = '', $output = wpdb::OBJECT, $filter = 'raw
 
 	if ( wpdb::ARRAY_A === $output ) {
 		return $_term->to_array();
-	} elseif ( ARRAY_N === $output ) {
+	} elseif ( wpdb::ARRAY_N === $output ) {
 		return array_values( $_term->to_array() );
 	}
 
@@ -1036,7 +1036,7 @@ function get_term( $term, $taxonomy = '', $output = wpdb::OBJECT, $filter = 'raw
  * @param string     $field    Either 'slug', 'name', 'term_id' (or 'id', 'ID'), or 'term_taxonomy_id'.
  * @param string|int $value    Search for this term value.
  * @param string     $taxonomy Taxonomy name. Optional, if `$field` is 'term_taxonomy_id'.
- * @param string     $output   Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
+ * @param string     $output   Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or wpdb::ARRAY_N, which
  *                             correspond to a WP_Term object, an associative array, or a numeric array,
  *                             respectively. Default wpdb::OBJECT.
  * @param string     $filter   Optional. How to sanitize term fields. Default 'raw'.

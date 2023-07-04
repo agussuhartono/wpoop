@@ -193,7 +193,7 @@ function get_approved_comments( $post_id, $args = array() ) {
  * @global WP_Comment $comment Global comment object.
  *
  * @param WP_Comment|string|int $comment Comment to retrieve.
- * @param string                $output  Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or ARRAY_N, which
+ * @param string                $output  Optional. The required return type. One of wpdb::OBJECT, wpdb::ARRAY_A, or wpdb::ARRAY_N, which
  *                                       correspond to a WP_Comment object, an associative array, or a numeric array,
  *                                       respectively. Default wpdb::OBJECT.
  * @return WP_Comment|array|null Depends on $output value.
@@ -228,7 +228,7 @@ function get_comment( $comment = null, $output = wpdb::OBJECT ) {
 		return $_comment;
 	} elseif ( wpdb::ARRAY_A === $output ) {
 		return $_comment->to_array();
-	} elseif ( ARRAY_N === $output ) {
+	} elseif ( wpdb::ARRAY_N === $output ) {
 		return array_values( $_comment->to_array() );
 	}
 	return $_comment;

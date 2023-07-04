@@ -1099,7 +1099,7 @@ function _media_button($title, $icon, $type, $id) {
 function get_post_to_edit( $id ) {
 	_deprecated_function( __FUNCTION__, '3.5.0', 'get_post()' );
 
-	return get_post( $id, OBJECT, 'edit' );
+	return get_post( $id, wpdb::OBJECT, 'edit' );
 }
 
 /**

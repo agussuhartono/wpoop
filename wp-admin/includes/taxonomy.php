@@ -38,7 +38,7 @@ function category_exists( $cat_name, $category_parent = null ) {
  * @return object
  */
 function get_category_to_edit( $id ) {
-	$category = get_term( $id, 'category', OBJECT, 'edit' );
+	$category = get_term( $id, 'category', wpdb::OBJECT, 'edit' );
 	_make_cat_compat( $category );
 	return $category;
 }

@@ -138,7 +138,7 @@ function wp_get_link_cats( $link_id = 0 ) {
  * @return object Link object for editing.
  */
 function get_link_to_edit( $link ) {
-	return get_bookmark( $link, OBJECT, 'edit' );
+	return get_bookmark( $link, wpdb::OBJECT, 'edit' );
 }
 
 /**

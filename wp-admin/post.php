@@ -196,7 +196,7 @@ switch ( $action ) {
 			}
 		}
 
-		$post = get_post( $post_id, OBJECT, 'edit' );
+		$post = get_post( $post_id, wpdb::OBJECT, 'edit' );
 
 		if ( post_type_supports( $post_type, 'comments' ) ) {
 			wp_enqueue_script( 'admin-comments' );

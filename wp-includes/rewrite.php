@@ -415,7 +415,7 @@ function wp_resolve_numeric_slug_conflicts( $query_vars = array() ) {
 		$value = $query_vars[ $compare ];
 	}
 
-	$post = get_page_by_path( $value, OBJECT, 'post' );
+	$post = get_page_by_path( $value, wpdb::OBJECT, 'post' );
 	if ( ! ( $post instanceof WP_Post ) ) {
 		return $query_vars;
 	}

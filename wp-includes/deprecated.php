@@ -2012,13 +2012,13 @@ function get_attachment_innerHTML($id = 0, $fullsize = false, $max_dims = false)
  * @see get_bookmark()
  *
  * @param int    $bookmark_id ID of link
- * @param string $output      Optional. Type of output. Accepts OBJECT, ARRAY_N, or ARRAY_A.
- *                            Default OBJECT.
+ * @param string $output      Optional. Type of output. Accepts wpdb::OBJECT, ARRAY_N, or ARRAY_A.
+ *                            Default wpdb::OBJECT.
  * @param string $filter      Optional. How to filter the link for output. Accepts 'raw', 'edit',
  *                            'attribute', 'js', 'db', or 'display'. Default 'raw'.
  * @return object|array Bookmark object or array, depending on the type specified by `$output`.
  */
-function get_link( $bookmark_id, $output = OBJECT, $filter = 'raw' ) {
+function get_link( $bookmark_id, $output = wpdb::OBJECT, $filter = 'raw' ) {
 	_deprecated_function( __FUNCTION__, '2.1.0', 'get_bookmark()' );
 	return get_bookmark($bookmark_id, $output, $filter);
 }
@@ -3267,10 +3267,10 @@ function image_resize( $file, $max_w, $max_h, $crop = false, $suffix = null, $de
  * @see get_post()
  *
  * @param int $postid Post ID.
- * @param string $mode How to return result, either OBJECT, ARRAY_N, or ARRAY_A.
+ * @param string $mode How to return result, either wpdb::OBJECT, ARRAY_N, or ARRAY_A.
  * @return WP_Post|null Post object or array holding post contents and information
  */
-function wp_get_single_post( $postid = 0, $mode = OBJECT ) {
+function wp_get_single_post( $postid = 0, $mode = wpdb::OBJECT ) {
 	_deprecated_function( __FUNCTION__, '3.5.0', 'get_post()' );
 	return get_post( $postid, $mode );
 }
@@ -4548,13 +4548,13 @@ function _filter_query_attachment_filenames( $clauses ) {
  * @global wpdb $wpdb WordPress database abstraction object.
  *
  * @param string       $page_title Page title.
- * @param string       $output     Optional. The required return type. One of OBJECT, ARRAY_A, or ARRAY_N, which
+ * @param string       $output     Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
  *                                 correspond to a WP_Post object, an associative array, or a numeric array,
- *                                 respectively. Default OBJECT.
+ *                                 respectively. Default wpdb::OBJECT.
  * @param string|array $post_type  Optional. Post type or array of post types. Default 'page'.
  * @return WP_Post|array|null WP_Post (or array) on success, or null on failure.
  */
-function get_page_by_title( $page_title, $output = OBJECT, $post_type = 'page' ) {
+function get_page_by_title( $page_title, $output = wpdb::OBJECT, $post_type = 'page' ) {
 	_deprecated_function( __FUNCTION__, '6.2.0', 'WP_Query' );
 	global $wpdb;
 

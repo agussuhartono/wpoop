@@ -392,7 +392,7 @@ class WP_Terms_List_Table extends WP_List_Table {
 		 */
 		$name = apply_filters( 'term_name', $pad . ' ' . $tag->name, $tag );
 
-		$qe_data = get_term( $tag->term_id, $taxonomy, OBJECT, 'edit' );
+		$qe_data = get_term( $tag->term_id, $taxonomy, wpdb::OBJECT, 'edit' );
 
 		$uri = wp_doing_ajax() ? wp_get_referer() : $_SERVER['REQUEST_URI'];
 

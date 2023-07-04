@@ -9,10 +9,6 @@
  * @since 0.71
  */
 
-/**
- * @since 0.71
- */
-define( 'OBJECT', 'OBJECT' );
 // phpcs:ignore Generic.NamingConventions.UpperCaseConstantName.ConstantNotUpperCase
 define( 'object', 'OBJECT' ); // Back compat.
 
@@ -49,6 +45,8 @@ define( 'ARRAY_N', 'ARRAY_N' );
 #[AllowDynamicProperties]
 class wpdb {
 
+
+	public const OBJECT = 'OBJECT';
 	/**
 	 * Whether to show SQL/DB errors.
 	 *
@@ -2996,13 +2994,13 @@ class wpdb {
 	 * @since 0.71
 	 *
 	 * @param string|null $query  SQL query.
-	 * @param string      $output Optional. The required return type. One of OBJECT, ARRAY_A, or ARRAY_N, which
+	 * @param string      $output Optional. The required return type. One of wpdb::OBJECT, ARRAY_A, or ARRAY_N, which
 	 *                            correspond to an stdClass object, an associative array, or a numeric array,
-	 *                            respectively. Default OBJECT.
+	 *                            respectively. Default wpdb::OBJECT.
 	 * @param int         $y      Optional. Row to return. Indexed from 0. Default 0.
 	 * @return array|object|null|void Database query result in format specified by $output or null on failure.
 	 */
-	public function get_row( $query = null, $output = OBJECT, $y = 0 ) {
+	public function get_row( $query = null, $output = wpdb::OBJECT, $y = 0 ) {
 		$this->func_call = "\$db->get_row(\"$query\",$output,$y)";
 
 		if ( $query ) {
@@ -3019,17 +3017,17 @@ class wpdb {
 			return null;
 		}
 
-		if ( OBJECT === $output ) {
+		if ( wpdb::OBJECT === $output ) {
 			return $this->last_result[ $y ] ? $this->last_result[ $y ] : null;
 		} elseif ( ARRAY_A === $output ) {
 			return $this->last_result[ $y ] ? get_object_vars( $this->last_result[ $y ] ) : null;
 		} elseif ( ARRAY_N === $output ) {
 			return $this->last_result[ $y ] ? array_values( get_object_vars( $this->last_result[ $y ] ) ) : null;
-		} elseif ( OBJECT === strtoupper( $output ) ) {
-			// Back compat for OBJECT being previously case-insensitive.
+		} elseif ( wpdb::OBJECT === strtoupper( $output ) ) {
+			// Back compat for wpdb::OBJECT being previously case-insensitive.
 			return $this->last_result[ $y ] ? $this->last_result[ $y ] : null;
 		} else {
-			$this->print_error( ' $db->get_row(string query, output type, int offset) -- Output type must be one of: OBJECT, ARRAY_A, ARRAY_N' );
+			$this->print_error( ' $db->get_row(string query, output type, int offset) -- Output type must be one of: wpdb::OBJECT, ARRAY_A, ARRAY_N' );
 		}
 	}
 
@@ -3073,17 +3071,17 @@ class wpdb {
 	 * @since 0.71
 	 *
 	 * @param string $query  SQL query.
-	 * @param string $output Optional. Any of ARRAY_A | ARRAY_N | OBJECT | OBJECT_K constants.
+	 * @param string $output Optional. Any of ARRAY_A | ARRAY_N | wpdb::OBJECT | OBJECT_K constants.
 	 *                       With one of the first three, return an array of rows indexed
 	 *                       from 0 by SQL result row number. Each row is an associative array
 	 *                       (column => value, ...), a numerically indexed array (0 => value, ...),
 	 *                       or an object ( ->column = value ), respectively. With OBJECT_K,
 	 *                       return an associative array of row objects keyed by the value
 	 *                       of each row's first column's value. Duplicate keys are discarded.
-	 *                       Default OBJECT.
+	 *                       Default wpdb::OBJECT.
 	 * @return array|object|null Database query results.
 	 */
-	public function get_results( $query = null, $output = OBJECT ) {
+	public function get_results( $query = null, $output = wpdb::OBJECT ) {
 		$this->func_call = "\$db->get_results(\"$query\", $output)";
 
 		if ( $query ) {
@@ -3097,7 +3095,7 @@ class wpdb {
 		}
 
 		$new_array = array();
-		if ( OBJECT === $output ) {
+		if ( wpdb::OBJECT === $output ) {
 			// Return an integer-keyed array of row objects.
 			return $this->last_result;
 		} elseif ( OBJECT_K === $output ) {
@@ -3127,8 +3125,8 @@ class wpdb {
 				}
 			}
 			return $new_array;
-		} elseif ( strtoupper( $output ) === OBJECT ) {
-			// Back compat for OBJECT being previously case-insensitive.
+		} elseif ( strtoupper( $output ) === wpdb::OBJECT ) {
+			// Back compat for wpdb::OBJECT being previously case-insensitive.
 			return $this->last_result;
 		}
 		return null;

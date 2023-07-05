@@ -9,10 +9,6 @@
  * @since 0.71
  */
 
-// phpcs:ignore Generic.NamingConventions.UpperCaseConstantName.ConstantNotUpperCase
-define( 'object', 'OBJECT' ); // Back compat.
-
-
 /**
  * WordPress database access abstraction class.
  *

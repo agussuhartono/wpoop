@@ -140,8 +140,7 @@ return array(
     'Plural_Forms' => $baseDir . '/wp-includes/pomo/plural-forms.php',
     'RSSCache' => $baseDir . '/wp-includes/rss.php',
     'Requests' => $baseDir . '/wp-includes/class-requests.php',
-    'Services_JSON' => $baseDir . '/wp-includes/class-json.php',
-    'Services_JSON_Error' => $baseDir . '/wp-includes/class-json.php',
+
     'SimplePie' => $baseDir . '/wp-includes/class-simplepie.php',
     'SimplePie_Author' => $baseDir . '/wp-includes/SimplePie/Author.php',
     'SimplePie_Cache' => $baseDir . '/wp-includes/SimplePie/Cache.php',

@@ -27,12 +27,6 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
          */
         'Requests' => __DIR__ . '/../..' . '/wp-includes/class-requests.php',
 
-        /**
-         * @deprecated 5.3.0, now use PHP native JSON extension
-         */
-        'Services_JSON' => __DIR__ . '/../..' . '/wp-includes/class-json.php',
-        'Services_JSON_Error' => __DIR__ . '/../..' . '/wp-includes/class-json.php',
-
         // nanti dulu
         'SimplePie' => __DIR__ . '/../..' . '/wp-includes/class-simplepie.php',
 

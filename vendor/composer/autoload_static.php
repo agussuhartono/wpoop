@@ -400,60 +400,60 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
 
         // 3th Party : /wp-includes/html-api/ | full
-        'WP_HTML_Attribute_Token' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-attribute-token.php',
-        'WP_HTML_Span' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-span.php',
-        'WP_HTML_Tag_Processor' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-tag-processor.php',
-        'WP_HTML_Text_Replacement' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-text-replacement.php',
-
+        'WP_HTML_Attribute_Token' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-attribute-token.php', // OK
+        'WP_HTML_Span' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-span.php',      // OK
+        'WP_HTML_Tag_Processor' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-tag-processor.php', // OK
+        'WP_HTML_Text_Replacement' => __DIR__ . '/../..' . '/wp-includes/html-api/class-wp-html-text-replacement.php', // OK
 
 
         // CORE : REST-API | wp-includes/rest-api | full
-        'WP_REST_Application_Passwords_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php',
-        'WP_REST_Attachments_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php',
-        'WP_REST_Autosaves_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php',
-        'WP_REST_Block_Directory_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-block-directory-controller.php',
-        'WP_REST_Block_Pattern_Categories_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-block-pattern-categories-controller.php',
-        'WP_REST_Block_Patterns_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-block-patterns-controller.php',
-        'WP_REST_Block_Renderer_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-block-renderer-controller.php',
-        'WP_REST_Block_Types_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-block-types-controller.php',
-        'WP_REST_Blocks_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-blocks-controller.php',
-        'WP_REST_Comment_Meta_Fields' => __DIR__ . '/../..' . '/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php',
-        'WP_REST_Comments_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php',
-        'WP_REST_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-controller.php',
-        'WP_REST_Edit_Site_Export_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-edit-site-export-controller.php',
-        'WP_REST_Global_Styles_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-global-styles-controller.php',
-        'WP_REST_Menu_Items_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-menu-items-controller.php',
-        'WP_REST_Menu_Locations_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-menu-locations-controller.php',
-        'WP_REST_Menus_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-menus-controller.php',
-        'WP_REST_Meta_Fields' => __DIR__ . '/../..' . '/wp-includes/rest-api/fields/class-wp-rest-meta-fields.php',
-        'WP_REST_Pattern_Directory_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php',
-        'WP_REST_Plugins_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php',
-        'WP_REST_Post_Format_Search_Handler' => __DIR__ . '/../..' . '/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php',
-        'WP_REST_Post_Meta_Fields' => __DIR__ . '/../..' . '/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php',
-        'WP_REST_Post_Search_Handler' => __DIR__ . '/../..' . '/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php',
-        'WP_REST_Post_Statuses_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php',
-        'WP_REST_Post_Types_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php',
-        'WP_REST_Posts_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php',
-        'WP_REST_Request' => __DIR__ . '/../..' . '/wp-includes/rest-api/class-wp-rest-request.php',
-        'WP_REST_Response' => __DIR__ . '/../..' . '/wp-includes/rest-api/class-wp-rest-response.php',
-        'WP_REST_Revisions_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php',
-        'WP_REST_Search_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-search-controller.php',
-        'WP_REST_Search_Handler' => __DIR__ . '/../..' . '/wp-includes/rest-api/search/class-wp-rest-search-handler.php',
-        'WP_REST_Server' => __DIR__ . '/../..' . '/wp-includes/rest-api/class-wp-rest-server.php',
-        'WP_REST_Settings_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-settings-controller.php',
-        'WP_REST_Sidebars_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-sidebars-controller.php',
-        'WP_REST_Site_Health_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-site-health-controller.php',
-        'WP_REST_Taxonomies_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php',
-        'WP_REST_Templates_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php',
-        'WP_REST_Term_Meta_Fields' => __DIR__ . '/../..' . '/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php',
-        'WP_REST_Term_Search_Handler' => __DIR__ . '/../..' . '/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php',
-        'WP_REST_Terms_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php',
-        'WP_REST_Themes_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php',
-        'WP_REST_URL_Details_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-url-details-controller.php',
-        'WP_REST_User_Meta_Fields' => __DIR__ . '/../..' . '/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php',
-        'WP_REST_Users_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php',
-        'WP_REST_Widget_Types_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php',
-        'WP_REST_Widgets_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php',
+        'WP_REST_Application_Passwords_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-application-passwords-controller.php',  // OK
+        'WP_REST_Attachments_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-attachments-controller.php', // OK
+        'WP_REST_Autosaves_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-autosaves-controller.php', // OK
+        'WP_REST_Block_Directory_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-block-directory-controller.php', // OK
+        'WP_REST_Block_Pattern_Categories_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-block-pattern-categories-controller.php', // OK
+        'WP_REST_Block_Patterns_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-block-patterns-controller.php', // OK
+        'WP_REST_Block_Renderer_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-block-renderer-controller.php', // OK
+        'WP_REST_Block_Types_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-block-types-controller.php', // OK
+        'WP_REST_Blocks_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-blocks-controller.php',  // OK
+        'WP_REST_Comment_Meta_Fields' => __DIR__ . '/../..' . '/wp-includes/rest-api/fields/class-wp-rest-comment-meta-fields.php', // OK
+        'WP_REST_Comments_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php', // OK
+        'WP_REST_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-controller.php', // OK
+        'WP_REST_Edit_Site_Export_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-edit-site-export-controller.php', // OK
+        'WP_REST_Global_Styles_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-global-styles-controller.php', // OK
+        'WP_REST_Menu_Items_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-menu-items-controller.php', // OK
+        'WP_REST_Menu_Locations_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-menu-locations-controller.php', // OK
+        'WP_REST_Menus_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-menus-controller.php', // OK
+        'WP_REST_Meta_Fields' => __DIR__ . '/../..' . '/wp-includes/rest-api/fields/class-wp-rest-meta-fields.php', // OK
+        'WP_REST_Pattern_Directory_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-pattern-directory-controller.php', // OK
+        'WP_REST_Plugins_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-plugins-controller.php', // OK
+        'WP_REST_Post_Format_Search_Handler' => __DIR__ . '/../..' . '/wp-includes/rest-api/search/class-wp-rest-post-format-search-handler.php', // OK
+        'WP_REST_Post_Meta_Fields' => __DIR__ . '/../..' . '/wp-includes/rest-api/fields/class-wp-rest-post-meta-fields.php', // OK
+        'WP_REST_Post_Search_Handler' => __DIR__ . '/../..' . '/wp-includes/rest-api/search/class-wp-rest-post-search-handler.php', // OK
+        'WP_REST_Post_Statuses_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-post-statuses-controller.php', // OK
+        'WP_REST_Post_Types_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-post-types-controller.php', // OK
+        'WP_REST_Posts_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-posts-controller.php', // OK
+        'WP_REST_Request' => __DIR__ . '/../..' . '/wp-includes/rest-api/class-wp-rest-request.php', // OK
+        'WP_REST_Response' => __DIR__ . '/../..' . '/wp-includes/rest-api/class-wp-rest-response.php', // OK
+        'WP_REST_Revisions_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-revisions-controller.php', // OK
+        'WP_REST_Search_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-search-controller.php', // OK
+        'WP_REST_Search_Handler' => __DIR__ . '/../..' . '/wp-includes/rest-api/search/class-wp-rest-search-handler.php', // OK
+        'WP_REST_Server' => __DIR__ . '/../..' . '/wp-includes/rest-api/class-wp-rest-server.php', // OK
+        'WP_REST_Settings_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-settings-controller.php', // OK
+        'WP_REST_Sidebars_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-sidebars-controller.php', // OK
+        'WP_REST_Site_Health_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-site-health-controller.php', // OK
+        'WP_REST_Taxonomies_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-taxonomies-controller.php', // OK
+        'WP_REST_Templates_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-templates-controller.php', // OK
+        'WP_REST_Term_Meta_Fields' => __DIR__ . '/../..' . '/wp-includes/rest-api/fields/class-wp-rest-term-meta-fields.php', // OK
+        'WP_REST_Term_Search_Handler' => __DIR__ . '/../..' . '/wp-includes/rest-api/search/class-wp-rest-term-search-handler.php', // OK 
+        'WP_REST_Terms_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-terms-controller.php', // OK
+        'WP_REST_Themes_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-themes-controller.php', // OK
+
+        'WP_REST_URL_Details_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-url-details-controller.php', // OK
+        'WP_REST_User_Meta_Fields' => __DIR__ . '/../..' . '/wp-includes/rest-api/fields/class-wp-rest-user-meta-fields.php', // OK
+        'WP_REST_Users_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-users-controller.php', // OK
+        'WP_REST_Widget_Types_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-widget-types-controller.php', // OK
+        'WP_REST_Widgets_Controller' => __DIR__ . '/../..' . '/wp-includes/rest-api/endpoints/class-wp-rest-widgets-controller.php', // OK
 
 
         // CORE : SITEMAP | /wp-includes/sitemaps/ | full
@@ -566,8 +566,6 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WpOrg\\Requests\\Utility\\CaseInsensitiveDictionary' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Utility/CaseInsensitiveDictionary.php',
         'WpOrg\\Requests\\Utility\\FilteredIterator' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Utility/FilteredIterator.php',
         'WpOrg\\Requests\\Utility\\InputValidator' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Utility/InputValidator.php',
-
-
 
 
         // 3th Party: ID3 | /wp-includes/ID3 | full

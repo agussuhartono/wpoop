@@ -380,7 +380,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Customize_Nav_Menu_Setting' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menu-setting.php',  // OK
         
         'WP_Customize_Nav_Menus_Panel' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-nav-menus-panel.php',  // OK
-        'WP_Customize_New_Menu_Control' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-new-menu-control.php',  // OK
+
         'WP_Customize_New_Menu_Section' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-new-menu-section.php',  // OK
 
         'WP_Customize_Partial' => __DIR__ . '/../..' . '/wp-includes/customize/class-wp-customize-partial.php',  // OK

@@ -247,7 +247,7 @@ return array(
     'WP_Customize_Nav_Menu_Setting' => $baseDir . '/wp-includes/customize/class-wp-customize-nav-menu-setting.php',
     'WP_Customize_Nav_Menus' => $baseDir . '/wp-includes/class-wp-customize-nav-menus.php',
     'WP_Customize_Nav_Menus_Panel' => $baseDir . '/wp-includes/customize/class-wp-customize-nav-menus-panel.php',
-    'WP_Customize_New_Menu_Control' => $baseDir . '/wp-includes/customize/class-wp-customize-new-menu-control.php',
+
     'WP_Customize_New_Menu_Section' => $baseDir . '/wp-includes/customize/class-wp-customize-new-menu-section.php',
     'WP_Customize_Panel' => $baseDir . '/wp-includes/class-wp-customize-panel.php',
     'WP_Customize_Partial' => $baseDir . '/wp-includes/customize/class-wp-customize-partial.php',

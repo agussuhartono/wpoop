@@ -468,11 +468,11 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Sitemaps_Users' => __DIR__ . '/../..' . '/wp-includes/sitemaps/providers/class-wp-sitemaps-users.php', // OK
 
         // style-engine | /wp-includes/style-engine/ | full
-        'WP_Style_Engine' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine.php',
-        'WP_Style_Engine_CSS_Declarations' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-css-declarations.php',
-        'WP_Style_Engine_CSS_Rule' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-css-rule.php',
-        'WP_Style_Engine_CSS_Rules_Store' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-css-rules-store.php',
-        'WP_Style_Engine_Processor' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-processor.php',
+        'WP_Style_Engine' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine.php', // OK
+        'WP_Style_Engine_CSS_Declarations' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-css-declarations.php', // OK
+        'WP_Style_Engine_CSS_Rule' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-css-rule.php', // OK
+        'WP_Style_Engine_CSS_Rules_Store' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-css-rules-store.php', // OK
+        'WP_Style_Engine_Processor' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine-processor.php', // OK
 
 
         // CORE : Widget | /wp-includes/widgets/ | full

@@ -267,7 +267,6 @@ return array(
     'WP_Embed' => $baseDir . '/wp-includes/class-wp-embed.php',
     'WP_Error' => $baseDir . '/wp-includes/class-wp-error.php',
     'WP_Fatal_Error_Handler' => $baseDir . '/wp-includes/class-wp-fatal-error-handler.php',
-    'WP_Feed_Cache' => $baseDir . '/wp-includes/class-wp-feed-cache.php',
     'WP_Feed_Cache_Transient' => $baseDir . '/wp-includes/class-wp-feed-cache-transient.php',
     'WP_Filesystem_Base' => $baseDir . '/wp-admin/includes/class-wp-filesystem-base.php',
     'WP_Filesystem_Direct' => $baseDir . '/wp-admin/includes/class-wp-filesystem-direct.php',

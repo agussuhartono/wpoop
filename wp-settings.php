@@ -290,7 +290,7 @@ require ABSPATH . WPINC . '/rest-api.php';
 // require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-site-health-controller.php';
 // require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-sidebars-controller.php';
 // require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-widget-types-controller.php';
-require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-widgets-controller.php';
+// require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-widgets-controller.php';
 // require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-templates-controller.php';
 // require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-url-details-controller.php';
 
@@ -306,15 +306,15 @@ require ABSPATH . WPINC . '/rest-api/endpoints/class-wp-rest-widgets-controller.
 // require ABSPATH . WPINC . '/rest-api/search/class-wp-rest-post-format-search-handler.php';
 
 require ABSPATH . WPINC . '/sitemaps.php';
-require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps.php';
-require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-index.php';
-require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-provider.php';
-require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-registry.php';
-require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-renderer.php';
-require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-stylesheet.php';
-require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-posts.php';
-require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-taxonomies.php';
-require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-users.php';
+// require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps.php';
+// require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-index.php';
+// require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-provider.php';
+// require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-registry.php';
+// require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-renderer.php';
+// require ABSPATH . WPINC . '/sitemaps/class-wp-sitemaps-stylesheet.php';
+// require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-posts.php';
+// require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-taxonomies.php';
+// require ABSPATH . WPINC . '/sitemaps/providers/class-wp-sitemaps-users.php';
 
 require ABSPATH . WPINC . '/blocks.php';
 require ABSPATH . WPINC . '/block-pattern-categories-registry.php';

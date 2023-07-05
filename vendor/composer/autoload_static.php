@@ -457,15 +457,15 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
 
         // CORE : SITEMAP | /wp-includes/sitemaps/ | full
-        'WP_Sitemaps' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps.php',
-        'WP_Sitemaps_Index' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-index.php',
-        'WP_Sitemaps_Posts' => __DIR__ . '/../..' . '/wp-includes/sitemaps/providers/class-wp-sitemaps-posts.php',
-        'WP_Sitemaps_Provider' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-provider.php',
-        'WP_Sitemaps_Registry' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-registry.php',
-        'WP_Sitemaps_Renderer' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-renderer.php',
-        'WP_Sitemaps_Stylesheet' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-stylesheet.php',
-        'WP_Sitemaps_Taxonomies' => __DIR__ . '/../..' . '/wp-includes/sitemaps/providers/class-wp-sitemaps-taxonomies.php',
-        'WP_Sitemaps_Users' => __DIR__ . '/../..' . '/wp-includes/sitemaps/providers/class-wp-sitemaps-users.php',
+        'WP_Sitemaps' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps.php', // OK
+        'WP_Sitemaps_Index' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-index.php', // OK
+        'WP_Sitemaps_Posts' => __DIR__ . '/../..' . '/wp-includes/sitemaps/providers/class-wp-sitemaps-posts.php', // OK
+        'WP_Sitemaps_Provider' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-provider.php', // OK
+        'WP_Sitemaps_Registry' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-registry.php', // OK
+        'WP_Sitemaps_Renderer' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-renderer.php',  // OK
+        'WP_Sitemaps_Stylesheet' => __DIR__ . '/../..' . '/wp-includes/sitemaps/class-wp-sitemaps-stylesheet.php', // OK
+        'WP_Sitemaps_Taxonomies' => __DIR__ . '/../..' . '/wp-includes/sitemaps/providers/class-wp-sitemaps-taxonomies.php', // OK
+        'WP_Sitemaps_Users' => __DIR__ . '/../..' . '/wp-includes/sitemaps/providers/class-wp-sitemaps-users.php', // OK
 
         // style-engine | /wp-includes/style-engine/ | full
         'WP_Style_Engine' => __DIR__ . '/../..' . '/wp-includes/style-engine/class-wp-style-engine.php',

@@ -141,10 +141,6 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_User_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-query.php',
         'WP_User_Request' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-request.php',
         
-        'WP_Widget' => __DIR__ . '/../..' . '/wp-includes/class-wp-widget.php',
-
-        'WP_Widget_Factory' => __DIR__ . '/../..' . '/wp-includes/class-wp-widget-factory.php',        
-
         'WP_oEmbed' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed.php',
         'WP_oEmbed_Controller' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed-controller.php',
         'Walker' => __DIR__ . '/../..' . '/wp-includes/class-wp-walker.php',
@@ -476,29 +472,33 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
 
         // CORE : Widget | /wp-includes/widgets/ | full
-        'WP_Nav_Menu_Widget' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-nav-menu-widget.php',
 
-        'WP_Widget_Archives' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-archives.php',
-        
-        'WP_Widget_Block' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-block.php',
-        'WP_Widget_Calendar' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-calendar.php',
-        'WP_Widget_Categories' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-categories.php',
-        'WP_Widget_Custom_HTML' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-custom-html.php',
+        'WP_Widget' => __DIR__ . '/../..' . '/wp-includes/class-wp-widget.php', // OK
+        'WP_Widget_Factory' => __DIR__ . '/../..' . '/wp-includes/class-wp-widget-factory.php',  // OK      
 
-        'WP_Widget_Links' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-links.php',
-        'WP_Widget_Media' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media.php',
-        'WP_Widget_Media_Audio' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media-audio.php',
-        'WP_Widget_Media_Gallery' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media-gallery.php',
-        'WP_Widget_Media_Image' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media-image.php',
-        'WP_Widget_Media_Video' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media-video.php',
-        'WP_Widget_Meta' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-meta.php',
-        'WP_Widget_Pages' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-pages.php',
-        'WP_Widget_RSS' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-rss.php',
-        'WP_Widget_Recent_Comments' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-recent-comments.php',
-        'WP_Widget_Recent_Posts' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-recent-posts.php',
-        'WP_Widget_Search' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-search.php',
-        'WP_Widget_Tag_Cloud' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-tag-cloud.php',
-        'WP_Widget_Text' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-text.php',
+        'WP_Nav_Menu_Widget' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-nav-menu-widget.php', // OK
+
+        'WP_Widget_Archives' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-archives.php', // OK        
+        'WP_Widget_Block' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-block.php', // OK
+        'WP_Widget_Calendar' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-calendar.php', // OK
+        'WP_Widget_Categories' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-categories.php', // OK
+        'WP_Widget_Custom_HTML' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-custom-html.php', // OK
+        'WP_Widget_Links' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-links.php', // OK
+        'WP_Widget_Media' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media.php', // OK
+        'WP_Widget_Media_Audio' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media-audio.php', // OK
+        'WP_Widget_Media_Gallery' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media-gallery.php', // OK
+        'WP_Widget_Media_Image' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media-image.php', // OK
+        'WP_Widget_Media_Video' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-media-video.php', // OK
+        'WP_Widget_Meta' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-meta.php', // OK
+        'WP_Widget_Pages' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-pages.php', // OK
+        'WP_Widget_RSS' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-rss.php', // OK
+
+        'WP_Widget_Recent_Comments' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-recent-comments.php', // OK
+        'WP_Widget_Recent_Posts' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-recent-posts.php', // OK 
+        'WP_Widget_Search' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-search.php', // OK
+
+        'WP_Widget_Tag_Cloud' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-tag-cloud.php', // OK
+        'WP_Widget_Text' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-text.php', // OK
 
         
         // /wp-includes/Requests/ | full

@@ -67,14 +67,18 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Fatal_Error_Handler' => __DIR__ . '/../..' . '/wp-includes/class-wp-fatal-error-handler.php',
         'WP_Feed_Cache_Transient' => __DIR__ . '/../..' . '/wp-includes/class-wp-feed-cache-transient.php',
 
+        'WP_Hook' => __DIR__ . '/../..' . '/wp-includes/class-wp-hook.php',
+
+        'WP_Http' => __DIR__ . '/../..' . '/wp-includes/class-wp-http.php', // OK
+
         'WP_HTTP_Fsockopen' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-streams.php',
         'WP_HTTP_IXR_Client' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-ixr-client.php',
         'WP_HTTP_Proxy' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-proxy.php',
         'WP_HTTP_Requests_Hooks' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-requests-hooks.php',
         'WP_HTTP_Requests_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-requests-response.php',
-        'WP_HTTP_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-response.php',
-        'WP_Hook' => __DIR__ . '/../..' . '/wp-includes/class-wp-hook.php',
-        'WP_Http' => __DIR__ . '/../..' . '/wp-includes/class-wp-http.php',
+        'WP_HTTP_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-response.php',        
+
+        
         'WP_Http_Cookie' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-cookie.php',
         'WP_Http_Curl' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-curl.php',
         'WP_Http_Encoding' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-encoding.php',

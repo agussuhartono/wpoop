@@ -234,10 +234,19 @@ require ABSPATH . WPINC . '/class-wp-oembed.php';
 require ABSPATH . WPINC . '/class-wp-oembed-controller.php';
 require ABSPATH . WPINC . '/media.php';
 require ABSPATH . WPINC . '/http.php';
+
 //require ABSPATH . WPINC . '/html-api/class-wp-html-attribute-token.php';
 //require ABSPATH . WPINC . '/html-api/class-wp-html-span.php';
 //require ABSPATH . WPINC . '/html-api/class-wp-html-text-replacement.php';
 //require ABSPATH . WPINC . '/html-api/class-wp-html-tag-processor.php';
+
+if ( ! class_exists( 'WpOrg\Requests\Autoload' ) ) {
+	require ABSPATH . WPINC . '/Requests/src/Autoload.php';
+
+	WpOrg\Requests\Autoload::register();
+	WpOrg\Requests\Requests::set_certificate_path( ABSPATH . WPINC . '/certificates/ca-bundle.crt' );
+}
+
 //require ABSPATH . WPINC . '/class-wp-http.php';
 
 require ABSPATH . WPINC . '/class-wp-http-streams.php';

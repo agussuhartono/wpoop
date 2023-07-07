@@ -7,13 +7,6 @@
  * @since 2.7.0
  */
 
-//if ( ! class_exists( 'WpOrg\Requests\Autoload' ) ) {
-//	require ABSPATH . WPINC . '/Requests/src/Autoload.php';
-//
-//	WpOrg\Requests\Autoload::register();
-//	WpOrg\Requests\Requests::set_certificate_path( ABSPATH . WPINC . '/certificates/ca-bundle.crt' );
-//}
-
 /**
  * Core class used for managing HTTP transports and making HTTP requests.
  *

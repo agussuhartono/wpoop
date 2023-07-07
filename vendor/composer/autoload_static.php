@@ -64,7 +64,9 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'WP_Dependencies' => __DIR__ . '/../..' . '/wp-includes/class-wp-dependencies.php',
         'WP_Embed' => __DIR__ . '/../..' . '/wp-includes/class-wp-embed.php',
-        'WP_Error' => __DIR__ . '/../..' . '/wp-includes/class-wp-error.php',
+
+        'WP_Error' => __DIR__ . '/../..' . '/wp-includes/class-wp-error.php', // OK
+
         'WP_Fatal_Error_Handler' => __DIR__ . '/../..' . '/wp-includes/class-wp-fatal-error-handler.php',
         'WP_Feed_Cache_Transient' => __DIR__ . '/../..' . '/wp-includes/class-wp-feed-cache-transient.php',
 
@@ -88,14 +90,16 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Image_Editor_GD' => __DIR__ . '/../..' . '/wp-includes/class-wp-image-editor-gd.php',
         'WP_Image_Editor_Imagick' => __DIR__ . '/../..' . '/wp-includes/class-wp-image-editor-imagick.php',
         
-        'WP_List_Util' => __DIR__ . '/../..' . '/wp-includes/class-wp-list-util.php',
+        'WP_List_Util' => __DIR__ . '/../..' . '/wp-includes/class-wp-list-util.php', // OK
+
         'WP_Locale' => __DIR__ . '/../..' . '/wp-includes/class-wp-locale.php',
         'WP_Locale_Switcher' => __DIR__ . '/../..' . '/wp-includes/class-wp-locale-switcher.php',
                 
-        'WP_MatchesMapRegex' => __DIR__ . '/../..' . '/wp-includes/class-wp-matchesmapregex.php',
+        'WP_MatchesMapRegex' => __DIR__ . '/../..' . '/wp-includes/class-wp-matchesmapregex.php', // OK
         
-        'WP_Meta_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-meta-query.php',
-        'WP_Metadata_Lazyloader' => __DIR__ . '/../..' . '/wp-includes/class-wp-metadata-lazyloader.php',
+        'WP_Meta_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-meta-query.php', // OK
+
+        'WP_Metadata_Lazyloader' => __DIR__ . '/../..' . '/wp-includes/class-wp-metadata-lazysloader.php',
 
         'WP_Network' => __DIR__ . '/../..' . '/wp-includes/class-wp-network.php',
         'WP_Network_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-network-query.php',

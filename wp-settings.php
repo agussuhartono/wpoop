@@ -109,13 +109,15 @@ wp_set_lang_dir();
 
 // Load early WordPress files.
 require ABSPATH . WPINC . '/compat.php';
-require ABSPATH . WPINC . '/class-wp-list-util.php';
+// require ABSPATH . WPINC . '/class-wp-list-util.php';
 require ABSPATH . WPINC . '/formatting.php';
 require ABSPATH . WPINC . '/meta.php';
 require ABSPATH . WPINC . '/functions.php';
-require ABSPATH . WPINC . '/class-wp-meta-query.php';
-require ABSPATH . WPINC . '/class-wp-matchesmapregex.php';
-require ABSPATH . WPINC . '/class-wp-error.php';
+
+// require ABSPATH . WPINC . '/class-wp-meta-query.php';
+// require ABSPATH . WPINC . '/class-wp-matchesmapregex.php';
+// require ABSPATH . WPINC . '/class-wp-error.php';
+
 require ABSPATH . WPINC . '/pomo/mo.php';
 
 /**

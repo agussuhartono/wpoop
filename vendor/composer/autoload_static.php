@@ -130,8 +130,10 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Term' => __DIR__ . '/../..' . '/wp-includes/class-wp-term.php',
         'WP_Term_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-term-query.php',
 
-        'WP_Text_Diff_Renderer_Table' => __DIR__ . '/../..' . '/wp-includes/class-wp-text-diff-renderer-table.php',
-        'WP_Text_Diff_Renderer_inline' => __DIR__ . '/../..' . '/wp-includes/class-wp-text-diff-renderer-inline.php',
+        // @see Text/Diff 
+        'WP_Text_Diff_Renderer_Table' => __DIR__ . '/../..' . '/wp-includes/class-wp-text-diff-renderer-table.php', // OK
+        'WP_Text_Diff_Renderer_inline' => __DIR__ . '/../..' . '/wp-includes/class-wp-text-diff-renderer-inline.php', // OK
+        
         'WP_Textdomain_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-textdomain-registry.php',
         'WP_Theme' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme.php',
         
@@ -332,20 +334,23 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
 
         // 3th Party : Text | /wp-includes/Text/ | full
-        'Text_Diff' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php',
-        'Text_Diff_Engine_native' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Engine/native.php',
-        'Text_Diff_Engine_shell' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Engine/shell.php',
-        'Text_Diff_Engine_string' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Engine/string.php',
-        'Text_Diff_Engine_xdiff' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Engine/xdiff.php',
-        'Text_Diff_Op' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php',
-        'Text_Diff_Op_add' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php',
-        'Text_Diff_Op_change' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php',
-        'Text_Diff_Op_copy' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php',
-        'Text_Diff_Op_delete' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php',
-        'Text_Diff_Renderer' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Renderer.php',
-        'Text_Diff_Renderer_inline' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Renderer/inline.php',
-        'Text_MappedDiff' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php',
+        'Text_Diff' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php', // OK
+        'Text_Diff_Op' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php', // OK
+        'Text_Diff_Op_add' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php', // OK
+        'Text_Diff_Op_change' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php', // OK
+        'Text_Diff_Op_copy' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php', // OK
+        'Text_Diff_Op_delete' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php', // OK
 
+        'Text_MappedDiff' => __DIR__ . '/../..' . '/wp-includes/Text/Diff.php', // OK
+
+        // engine load by Diff object
+        'Text_Diff_Engine_native' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Engine/native.php', // OK
+        'Text_Diff_Engine_shell' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Engine/shell.php', // OK
+        'Text_Diff_Engine_string' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Engine/string.php', // OK
+        'Text_Diff_Engine_xdiff' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Engine/xdiff.php', // OK
+
+        'Text_Diff_Renderer' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Renderer.php', // OK
+        'Text_Diff_Renderer_inline' => __DIR__ . '/../..' . '/wp-includes/Text/Diff/Renderer/inline.php', // OK
 
 
         // 3th Party : /wp-includes/random_compat/ | full
@@ -505,7 +510,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Widget_Text' => __DIR__ . '/../..' . '/wp-includes/widgets/class-wp-widget-text.php', // OK
 
         
-        // /wp-includes/Requests/ | full
+        // /wp-includes/Requests/ | full OK
         'WpOrg\\Requests\\Auth' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Auth.php',
         'WpOrg\\Requests\\Auth\\Basic' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Auth/Basic.php',
         'WpOrg\\Requests\\Autoload' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Autoload.php',

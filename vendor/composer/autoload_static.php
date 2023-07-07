@@ -12,10 +12,11 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         /**
          * @deprecated unused 
+         * @todo maybe the library removed from the WP Core
          */
-        'AtomEntry' => __DIR__ . '/../..' . '/wp-includes/atomlib.php',
-        'AtomFeed' => __DIR__ . '/../..' . '/wp-includes/atomlib.php',
-        'AtomParser' => __DIR__ . '/../..' . '/wp-includes/atomlib.php',
+        'AtomEntry' => __DIR__ . '/../..' . '/wp-includes/atomlib.php', // OK
+        'AtomFeed' => __DIR__ . '/../..' . '/wp-includes/atomlib.php', // OK
+        'AtomParser' => __DIR__ . '/../..' . '/wp-includes/atomlib.php', // OK
         
         'POP3' => __DIR__ . '/../..' . '/wp-includes/class-pop3.php', // OK
 
@@ -575,7 +576,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WpOrg\\Requests\\Utility\\CaseInsensitiveDictionary' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Utility/CaseInsensitiveDictionary.php',
         'WpOrg\\Requests\\Utility\\FilteredIterator' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Utility/FilteredIterator.php',
         'WpOrg\\Requests\\Utility\\InputValidator' => __DIR__ . '/../..' . '/wp-includes/Requests/src/Utility/InputValidator.php',
-
+        // END /wp-includes/Requests/ | full OK
 
         // 3th Party: ID3 | /wp-includes/ID3 | full
         'AMFReader' => __DIR__ . '/../..' . '/wp-includes/ID3/module.audio-video.flv.php',

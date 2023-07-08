@@ -176,16 +176,16 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         //===================================
 
         // 3 th Party : PHPMailer | /wp-includes/IXR - full
-        'IXR_Base64' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-base64.php',
-        'IXR_Client' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-client.php',
-        'IXR_ClientMulticall' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-clientmulticall.php',
-        'IXR_Date' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-date.php',
-        'IXR_Error' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-error.php',
-        'IXR_IntrospectionServer' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-introspectionserver.php',
-        'IXR_Message' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-message.php',
-        'IXR_Request' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-request.php',
-        'IXR_Server' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-server.php',
-        'IXR_Value' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-value.php',
+        'IXR_Base64' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-base64.php', // ok
+        'IXR_Client' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-client.php', // ok
+        'IXR_ClientMulticall' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-clientmulticall.php', // ok
+        'IXR_Date' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-date.php', // ok
+        'IXR_Error' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-error.php', // ok
+        'IXR_IntrospectionServer' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-introspectionserver.php', // ok
+        'IXR_Message' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-message.php', // ok
+        'IXR_Request' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-request.php', // ok
+        'IXR_Server' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-server.php', // ok
+        'IXR_Value' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-value.php', // ok
 
         
 

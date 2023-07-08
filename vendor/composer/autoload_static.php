@@ -24,7 +24,8 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         /**
          * @deprecated v6.2.0 load from wp-includes/Requests/library/Requests.php
-         * @todo need more exploration
+         * @todo need more exploration or remove from core
+         * @see Requests\Autoload::load();
          */
         'Requests' => __DIR__ . '/../..' . '/wp-includes/class-requests.php',
 
@@ -125,6 +126,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'WP_SimplePie_File' => __DIR__ . '/../..' . '/wp-includes/class-wp-simplepie-file.php',
         'WP_SimplePie_Sanitize_KSES' => __DIR__ . '/../..' . '/wp-includes/class-wp-simplepie-sanitize-kses.php',
+
         'WP_Site' => __DIR__ . '/../..' . '/wp-includes/class-wp-site.php',
         
         'WP_Site_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-site-query.php',
@@ -301,8 +303,8 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
 
         // 3th Party : SimplePie | /wp-includes/SimplePie/ | full
-        'SimplePie_Author' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Author.php',
-        'SimplePie_Cache' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Cache.php',
+        'SimplePie_Author' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Author.php', // OK
+        'SimplePie_Cache' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Cache.php', // OK
         'SimplePie_Cache_Base' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Cache/Base.php',
         'SimplePie_Cache_DB' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Cache/DB.php',
         'SimplePie_Cache_File' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Cache/File.php',
@@ -312,28 +314,30 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'SimplePie_Cache_Redis' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Cache/Redis.php',
         'SimplePie_Caption' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Caption.php',
         'SimplePie_Category' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Category.php',
-        'SimplePie_Content_Type_Sniffer' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Content/Type/Sniffer.php',
+        'SimplePie_Content_Type_Sniffer' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Content/Type/Sniffer.php', // OK
         'SimplePie_Copyright' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Copyright.php',
         'SimplePie_Core' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Core.php',
         'SimplePie_Credit' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Credit.php',
         'SimplePie_Decode_HTML_Entities' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Decode/HTML/Entities.php',
         'SimplePie_Enclosure' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Enclosure.php',
         'SimplePie_Exception' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Exception.php',
-        'SimplePie_File' => __DIR__ . '/../..' . '/wp-includes/SimplePie/File.php',
+
+        'SimplePie_File' => __DIR__ . '/../..' . '/wp-includes/SimplePie/File.php', // ok
+
         'SimplePie_HTTP_Parser' => __DIR__ . '/../..' . '/wp-includes/SimplePie/HTTP/Parser.php',
-        'SimplePie_IRI' => __DIR__ . '/../..' . '/wp-includes/SimplePie/IRI.php',
-        'SimplePie_Item' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Item.php',
-        'SimplePie_Locator' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Locator.php',
-        'SimplePie_Misc' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Misc.php',
+        'SimplePie_IRI' => __DIR__ . '/../..' . '/wp-includes/SimplePie/IRI.php', // ok
+        'SimplePie_Item' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Item.php', //OK
+        'SimplePie_Locator' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Locator.php', // OK
+        'SimplePie_Misc' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Misc.php',  // OK
         'SimplePie_Net_IPv6' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Net/IPv6.php',
-        'SimplePie_Parse_Date' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Parse/Date.php',
-        'SimplePie_Parser' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Parser.php',
+        'SimplePie_Parse_Date' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Parse/Date.php', // OK
+        'SimplePie_Parser' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Parser.php', // OK
         'SimplePie_Rating' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Rating.php',
-        'SimplePie_Registry' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Registry.php',
+        'SimplePie_Registry' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Registry.php', // ok
         'SimplePie_Restriction' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Restriction.php',
-        'SimplePie_Sanitize' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Sanitize.php',
+        'SimplePie_Sanitize' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Sanitize.php', // ok
         'SimplePie_Source' => __DIR__ . '/../..' . '/wp-includes/SimplePie/Source.php',
-        'SimplePie_XML_Declaration_Parser' => __DIR__ . '/../..' . '/wp-includes/SimplePie/XML/Declaration/Parser.php',
+        'SimplePie_XML_Declaration_Parser' => __DIR__ . '/../..' . '/wp-includes/SimplePie/XML/Declaration/Parser.php', // ok
         'SimplePie_gzdecode' => __DIR__ . '/../..' . '/wp-includes/SimplePie/gzdecode.php',
 
 

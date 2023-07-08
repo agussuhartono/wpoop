@@ -2,6 +2,8 @@
 /**
  * Loads the old Requests class file when the autoloader
  * references the original PSR-0 Requests class.
+ * 
+ * Molex Note : this file call by Requests/src/Autoload.php;
  *
  * @deprecated 6.2.0
  * @package WordPress

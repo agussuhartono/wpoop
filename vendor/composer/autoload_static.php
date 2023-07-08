@@ -76,7 +76,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Http' => __DIR__ . '/../..' . '/wp-includes/class-wp-http.php', // OK
 
         'WP_HTTP_Fsockopen' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-streams.php', // ok
-        'WP_HTTP_IXR_Client' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-ixr-client.php',
+        'WP_HTTP_IXR_Client' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-ixr-client.php', // ok
         'WP_HTTP_Proxy' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-proxy.php',
         'WP_HTTP_Requests_Hooks' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-requests-hooks.php',
         'WP_HTTP_Requests_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-requests-response.php',

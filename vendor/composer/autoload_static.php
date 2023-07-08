@@ -29,7 +29,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
          */
         'Requests' => __DIR__ . '/../..' . '/wp-includes/class-requests.php',
 
-        // nanti dulu
+        /** @todo nanti dulu */
         'SimplePie' => __DIR__ . '/../..' . '/wp-includes/class-simplepie.php',
 
         'WP' => __DIR__ . '/../..' . '/wp-includes/class-wp.php', // OK
@@ -77,7 +77,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'WP_HTTP_Fsockopen' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-streams.php', // ok
         'WP_HTTP_IXR_Client' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-ixr-client.php', // ok
-        'WP_HTTP_Proxy' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-proxy.php',
+        'WP_HTTP_Proxy' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-proxy.php', // ok
         'WP_HTTP_Requests_Hooks' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-requests-hooks.php',
         'WP_HTTP_Requests_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-requests-response.php',
         'WP_HTTP_Response' => __DIR__ . '/../..' . '/wp-includes/class-wp-http-response.php',        

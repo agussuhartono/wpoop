@@ -252,13 +252,15 @@ if ( ! class_exists( 'WpOrg\Requests\Autoload' ) ) {
 //require ABSPATH . WPINC . '/class-wp-http.php';
 
 // require ABSPATH . WPINC . '/class-wp-http-streams.php';
-require ABSPATH . WPINC . '/class-wp-http-curl.php';
+// require ABSPATH . WPINC . '/class-wp-http-curl.php';
 // require ABSPATH . WPINC . '/class-wp-http-proxy.php';
-require ABSPATH . WPINC . '/class-wp-http-cookie.php';
-require ABSPATH . WPINC . '/class-wp-http-encoding.php';
-require ABSPATH . WPINC . '/class-wp-http-response.php';
-require ABSPATH . WPINC . '/class-wp-http-requests-response.php';
-require ABSPATH . WPINC . '/class-wp-http-requests-hooks.php';
+// require ABSPATH . WPINC . '/class-wp-http-cookie.php';
+// require ABSPATH . WPINC . '/class-wp-http-encoding.php';
+// require ABSPATH . WPINC . '/class-wp-http-response.php';
+// require ABSPATH . WPINC . '/class-wp-http-requests-response.php';
+// require ABSPATH . WPINC . '/class-wp-http-requests-hooks.php';
+
+
 require ABSPATH . WPINC . '/widgets.php';
 
 // require ABSPATH . WPINC . '/class-wp-widget.php';

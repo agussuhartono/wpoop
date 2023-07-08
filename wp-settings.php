@@ -42,7 +42,7 @@ wp_check_php_mysql_versions();
 
 // Include files required for initialization.
 require ABSPATH . WPINC . '/class-wp-paused-extensions-storage.php';
-require ABSPATH . WPINC . '/class-wp-fatal-error-handler.php';
+// require ABSPATH . WPINC . '/class-wp-fatal-error-handler.php';
 require ABSPATH . WPINC . '/class-wp-recovery-mode-cookie-service.php';
 require ABSPATH . WPINC . '/class-wp-recovery-mode-key-service.php';
 require ABSPATH . WPINC . '/class-wp-recovery-mode-link-service.php';
@@ -231,7 +231,7 @@ require ABSPATH . WPINC . '/update.php';
 require ABSPATH . WPINC . '/canonical.php';
 require ABSPATH . WPINC . '/shortcodes.php';
 require ABSPATH . WPINC . '/embed.php';
-require ABSPATH . WPINC . '/class-wp-embed.php';
+// require ABSPATH . WPINC . '/class-wp-embed.php';
 require ABSPATH . WPINC . '/class-wp-oembed.php';
 require ABSPATH . WPINC . '/class-wp-oembed-controller.php';
 require ABSPATH . WPINC . '/media.php';
@@ -251,7 +251,7 @@ if ( ! class_exists( 'WpOrg\Requests\Autoload' ) ) {
 
 //require ABSPATH . WPINC . '/class-wp-http.php';
 
-require ABSPATH . WPINC . '/class-wp-http-streams.php';
+// require ABSPATH . WPINC . '/class-wp-http-streams.php';
 require ABSPATH . WPINC . '/class-wp-http-curl.php';
 require ABSPATH . WPINC . '/class-wp-http-proxy.php';
 require ABSPATH . WPINC . '/class-wp-http-cookie.php';

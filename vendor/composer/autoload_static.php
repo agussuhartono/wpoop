@@ -99,7 +99,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         
         'WP_Meta_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-meta-query.php', // OK
 
-        'WP_Metadata_Lazyloader' => __DIR__ . '/../..' . '/wp-includes/class-wp-metadata-lazysloader.php',
+        'WP_Metadata_Lazyloader' => __DIR__ . '/../..' . '/wp-includes/class-wp-metadata-lazyloader.php', // ok
 
         'WP_Network' => __DIR__ . '/../..' . '/wp-includes/class-wp-network.php',
         'WP_Network_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-network-query.php',

@@ -69,7 +69,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Error' => __DIR__ . '/../..' . '/wp-includes/class-wp-error.php', // OK
 
         'WP_Fatal_Error_Handler' => __DIR__ . '/../..' . '/wp-includes/class-wp-fatal-error-handler.php',
-        'WP_Feed_Cache_Transient' => __DIR__ . '/../..' . '/wp-includes/class-wp-feed-cache-transient.php',
+        'WP_Feed_Cache_Transient' => __DIR__ . '/../..' . '/wp-includes/class-wp-feed-cache-transient.php', // ok
 
         'WP_Hook' => __DIR__ . '/../..' . '/wp-includes/class-wp-hook.php',
 

@@ -3218,8 +3218,7 @@ function trackback( $trackback_url, $title, $excerpt, $ID ) {
  * @param string $path Path to send the ping.
  */
 function weblog_ping( $server = '', $path = '' ) {
-	include_once ABSPATH . WPINC . '/class-IXR.php';
-	include_once ABSPATH . WPINC . '/class-wp-http-ixr-client.php';
+	include_once ABSPATH . WPINC . '/class-IXR.php';	
 
 	// Using a timeout of 3 seconds should be enough to cover slow servers.
 	$client             = new WP_HTTP_IXR_Client( $server, ( ( ! strlen( trim( $path ) ) || ( '/' === $path ) ) ? false : $path ) );

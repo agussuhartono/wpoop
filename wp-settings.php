@@ -158,8 +158,6 @@ if ( SHORTINIT ) {
 // Load the L10n library.
 require_once ABSPATH . WPINC . '/l10n.php';
 require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
-require_once ABSPATH . WPINC . '/class-wp-locale.php';
-require_once ABSPATH . WPINC . '/class-wp-locale-switcher.php';
 
 // Run the installer if WordPress is not installed.
 wp_not_installed();

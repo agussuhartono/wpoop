@@ -92,8 +92,8 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         
         'WP_List_Util' => __DIR__ . '/../..' . '/wp-includes/class-wp-list-util.php', // OK
 
-        'WP_Locale' => __DIR__ . '/../..' . '/wp-includes/class-wp-locale.php',
-        'WP_Locale_Switcher' => __DIR__ . '/../..' . '/wp-includes/class-wp-locale-switcher.php',
+        'WP_Locale' => __DIR__ . '/../..' . '/wp-includes/class-wp-locale.php', // ok
+        'WP_Locale_Switcher' => __DIR__ . '/../..' . '/wp-includes/class-wp-locale-switcher.php', // ok
                 
         'WP_MatchesMapRegex' => __DIR__ . '/../..' . '/wp-includes/class-wp-matchesmapregex.php', // OK
         

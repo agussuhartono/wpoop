@@ -123,8 +123,9 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Recovery_Mode_Link_Service' => __DIR__ . '/../..' . '/wp-includes/class-wp-recovery-mode-link-service.php', // ok
         
         'WP_Rewrite' => __DIR__ . '/../..' . '/wp-includes/class-wp-rewrite.php', // ok
-        'WP_Role' => __DIR__ . '/../..' . '/wp-includes/class-wp-role.php',
-        'WP_Roles' => __DIR__ . '/../..' . '/wp-includes/class-wp-roles.php',
+
+        'WP_Role' => __DIR__ . '/../..' . '/wp-includes/class-wp-role.php', // ok
+        'WP_Roles' => __DIR__ . '/../..' . '/wp-includes/class-wp-roles.php', // ok
 
         'WP_Scripts' => __DIR__ . '/../..' . '/wp-includes/class-wp-scripts.php',
         'WP_Session_Tokens' => __DIR__ . '/../..' . '/wp-includes/class-wp-session-tokens.php',

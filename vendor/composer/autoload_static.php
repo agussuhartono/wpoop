@@ -114,7 +114,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Post_Comments_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-post-comments-list-table.php', // ok
         'WP_Posts_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-posts-list-table.php', // ok
 
-        'WP_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-query.php',
+        'WP_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-query.php', // ok
 
         'WP_Recovery_Mode' => __DIR__ . '/../..' . '/wp-includes/class-wp-recovery-mode.php',
         'WP_Recovery_Mode_Cookie_Service' => __DIR__ . '/../..' . '/wp-includes/class-wp-recovery-mode-cookie-service.php',

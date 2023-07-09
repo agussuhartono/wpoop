@@ -150,20 +150,9 @@ wp_not_installed();
 require ABSPATH . WPINC . '/class-wp-walker.php';
 require ABSPATH . WPINC . '/capabilities.php';
 
-// require ABSPATH . WPINC . '/class-wp-roles.php';
-// require ABSPATH . WPINC . '/class-wp-role.php';
-
-// require ABSPATH . WPINC . '/class-wp-user.php';
-
 require ABSPATH . WPINC . '/query.php';
 
 require ABSPATH . WPINC . '/theme.php';
-
-//require ABSPATH . WPINC . '/class-wp-theme.php';
-//require ABSPATH . WPINC . '/class-wp-theme-json-schema.php';
-//require ABSPATH . WPINC . '/class-wp-theme-json-data.php';
-//require ABSPATH . WPINC . '/class-wp-theme-json.php';
-//require ABSPATH . WPINC . '/class-wp-theme-json-resolver.php';
 
 require ABSPATH . WPINC . '/global-styles-and-settings.php';
 
@@ -177,10 +166,6 @@ require ABSPATH . WPINC . '/https-migration.php';
 require ABSPATH . WPINC . '/class-wp-session-tokens.php';
 
 require ABSPATH . WPINC . '/user.php';
-
-// require ABSPATH . WPINC . '/class-wp-user-request.php';
-// require ABSPATH . WPINC . '/class-wp-user-query.php';
-// require ABSPATH . WPINC . '/class-wp-user-meta-session-tokens.php';
 
 require ABSPATH . WPINC . '/general-template.php';
 require ABSPATH . WPINC . '/link-template.php';
@@ -202,8 +187,6 @@ require ABSPATH . WPINC . '/comment.php';
 require ABSPATH . WPINC . '/class-walker-comment.php';
 require ABSPATH . WPINC . '/comment-template.php';
 require ABSPATH . WPINC . '/rewrite.php';
-
-// require ABSPATH . WPINC . '/class-wp-rewrite.php';
 
 require ABSPATH . WPINC . '/feed.php';
 require ABSPATH . WPINC . '/bookmark.php';

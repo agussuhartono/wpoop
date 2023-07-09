@@ -108,9 +108,12 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'WP_Paused_Extensions_Storage' => __DIR__ . '/../..' . '/wp-includes/class-wp-paused-extensions-storage.php', // ok
                 
-        'WP_Post' => __DIR__ . '/../..' . '/wp-includes/class-wp-post.php',        
-        'WP_Post_Type' => __DIR__ . '/../..' . '/wp-includes/class-wp-post-type.php',
+        'WP_Post' => __DIR__ . '/../..' . '/wp-includes/class-wp-post.php',   // ok     
+        'WP_Post_Type' => __DIR__ . '/../..' . '/wp-includes/class-wp-post-type.php', // ok
         
+        'WP_Post_Comments_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-post-comments-list-table.php', // ok
+        'WP_Posts_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-posts-list-table.php', // ok
+
         'WP_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-query.php',
 
         'WP_Recovery_Mode' => __DIR__ . '/../..' . '/wp-includes/class-wp-recovery-mode.php',
@@ -669,10 +672,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'WP_Plugin_Install_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-plugin-install-list-table.php',
         'WP_Plugins_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-plugins-list-table.php',
-
-        'WP_Post_Comments_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-post-comments-list-table.php',
-
-        'WP_Posts_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-posts-list-table.php',
+       
         'WP_Privacy_Data_Export_Requests_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-privacy-data-export-requests-list-table.php',
         'WP_Privacy_Data_Export_Requests_Table' => __DIR__ . '/../..' . '/wp-admin/includes/deprecated.php',
         'WP_Privacy_Data_Removal_Requests_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-privacy-data-removal-requests-list-table.php',

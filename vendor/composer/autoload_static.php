@@ -147,12 +147,13 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Text_Diff_Renderer_inline' => __DIR__ . '/../..' . '/wp-includes/class-wp-text-diff-renderer-inline.php', // OK
         
         'WP_Textdomain_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-textdomain-registry.php',
-        'WP_Theme' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme.php',
+
+        'WP_Theme' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme.php', // ok
         
-        'WP_Theme_JSON' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json.php',
-        'WP_Theme_JSON_Data' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json-data.php',
-        'WP_Theme_JSON_Resolver' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json-resolver.php',
-        'WP_Theme_JSON_Schema' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json-schema.php',
+        'WP_Theme_JSON' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json.php', // ok
+        'WP_Theme_JSON_Data' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json-data.php', // ok
+        'WP_Theme_JSON_Resolver' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json-resolver.php', // ok
+        'WP_Theme_JSON_Schema' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json-schema.php', // ok
         
         'WP_User' => __DIR__ . '/../..' . '/wp-includes/class-wp-user.php', // ok
         'WP_User_Meta_Session_Tokens' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-meta-session-tokens.php', // ok

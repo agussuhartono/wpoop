@@ -40,8 +40,6 @@ require ABSPATH . WPINC . '/load.php';
 // Check for the required PHP version and for the MySQL extension or a database drop-in.
 wp_check_php_mysql_versions();
 
-// require ABSPATH . WPINC . '/class-wp-fatal-error-handler.php';
-
 require ABSPATH . WPINC . '/error-protection.php';
 require ABSPATH . WPINC . '/default-constants.php';
 require_once ABSPATH . WPINC . '/plugin.php';
@@ -103,15 +101,9 @@ wp_set_lang_dir();
 
 // Load early WordPress files.
 require ABSPATH . WPINC . '/compat.php';
-// require ABSPATH . WPINC . '/class-wp-list-util.php';
 require ABSPATH . WPINC . '/formatting.php';
 require ABSPATH . WPINC . '/meta.php';
 require ABSPATH . WPINC . '/functions.php';
-
-// require ABSPATH . WPINC . '/class-wp-meta-query.php';
-// require ABSPATH . WPINC . '/class-wp-matchesmapregex.php';
-// require ABSPATH . WPINC . '/class-wp-error.php';
-
 require ABSPATH . WPINC . '/pomo/mo.php';
 
 /**
@@ -161,7 +153,6 @@ require ABSPATH . WPINC . '/capabilities.php';
 require ABSPATH . WPINC . '/class-wp-roles.php';
 require ABSPATH . WPINC . '/class-wp-role.php';
 require ABSPATH . WPINC . '/class-wp-user.php';
-// require ABSPATH . WPINC . '/class-wp-query.php';
 require ABSPATH . WPINC . '/query.php';
 
 require ABSPATH . WPINC . '/theme.php';
@@ -192,9 +183,6 @@ require ABSPATH . WPINC . '/post.php';
 require ABSPATH . WPINC . '/class-walker-page.php';
 require ABSPATH . WPINC . '/class-walker-page-dropdown.php';
 
-// require ABSPATH . WPINC . '/class-wp-post-type.php';
-// require ABSPATH . WPINC . '/class-wp-post.php';
-
 require ABSPATH . WPINC . '/post-template.php';
 require ABSPATH . WPINC . '/revision.php';
 require ABSPATH . WPINC . '/post-formats.php';
@@ -224,7 +212,7 @@ require ABSPATH . WPINC . '/update.php';
 require ABSPATH . WPINC . '/canonical.php';
 require ABSPATH . WPINC . '/shortcodes.php';
 require ABSPATH . WPINC . '/embed.php';
-// require ABSPATH . WPINC . '/class-wp-embed.php';
+
 require ABSPATH . WPINC . '/class-wp-oembed.php';
 require ABSPATH . WPINC . '/class-wp-oembed-controller.php';
 require ABSPATH . WPINC . '/media.php';

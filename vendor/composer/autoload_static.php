@@ -136,7 +136,8 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Site' => __DIR__ . '/../..' . '/wp-includes/class-wp-site.php', // ok       
         'WP_Site_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-site-query.php', // ok , for multisite
 
-        'WP_Styles' => __DIR__ . '/../..' . '/wp-includes/class-wp-styles.php',
+        'WP_Styles' => __DIR__ . '/../..' . '/wp-includes/class-wp-styles.php', // ok
+
         'WP_Tax_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-tax-query.php',
         'WP_Taxonomy' => __DIR__ . '/../..' . '/wp-includes/class-wp-taxonomy.php',
         'WP_Term' => __DIR__ . '/../..' . '/wp-includes/class-wp-term.php',

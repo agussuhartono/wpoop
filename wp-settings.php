@@ -153,7 +153,7 @@ require ABSPATH . WPINC . '/capabilities.php';
 // require ABSPATH . WPINC . '/class-wp-roles.php';
 // require ABSPATH . WPINC . '/class-wp-role.php';
 
-require ABSPATH . WPINC . '/class-wp-user.php';
+// require ABSPATH . WPINC . '/class-wp-user.php';
 
 require ABSPATH . WPINC . '/query.php';
 
@@ -171,11 +171,14 @@ require ABSPATH . WPINC . '/theme-templates.php';
 require ABSPATH . WPINC . '/template.php';
 require ABSPATH . WPINC . '/https-detection.php';
 require ABSPATH . WPINC . '/https-migration.php';
-require ABSPATH . WPINC . '/class-wp-user-request.php';
-require ABSPATH . WPINC . '/user.php';
-require ABSPATH . WPINC . '/class-wp-user-query.php';
+
 require ABSPATH . WPINC . '/class-wp-session-tokens.php';
-require ABSPATH . WPINC . '/class-wp-user-meta-session-tokens.php';
+
+require ABSPATH . WPINC . '/user.php';
+
+// require ABSPATH . WPINC . '/class-wp-user-request.php';
+// require ABSPATH . WPINC . '/class-wp-user-query.php';
+// require ABSPATH . WPINC . '/class-wp-user-meta-session-tokens.php';
 
 require ABSPATH . WPINC . '/general-template.php';
 require ABSPATH . WPINC . '/link-template.php';

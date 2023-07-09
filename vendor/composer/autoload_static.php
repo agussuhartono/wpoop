@@ -154,10 +154,10 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Theme_JSON_Resolver' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json-resolver.php',
         'WP_Theme_JSON_Schema' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme-json-schema.php',
         
-        'WP_User' => __DIR__ . '/../..' . '/wp-includes/class-wp-user.php',
-        'WP_User_Meta_Session_Tokens' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-meta-session-tokens.php',
-        'WP_User_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-query.php',
-        'WP_User_Request' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-request.php',
+        'WP_User' => __DIR__ . '/../..' . '/wp-includes/class-wp-user.php', // ok
+        'WP_User_Meta_Session_Tokens' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-meta-session-tokens.php', // ok
+        'WP_User_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-query.php', // ok
+        'WP_User_Request' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-request.php', // ok
         
         'WP_oEmbed' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed.php',
         'WP_oEmbed_Controller' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed-controller.php',

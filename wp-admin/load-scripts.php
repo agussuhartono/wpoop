@@ -12,6 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', dirname( __DIR__ ) . '/' );
 }
 
+define( 'WPVENDOR', 'vendor' );
+
+require ABSPATH . WPVENDOR . '/autoload.php';
+
 define( 'WPINC', 'wp-includes' );
 
 $protocol = $_SERVER['SERVER_PROTOCOL'];

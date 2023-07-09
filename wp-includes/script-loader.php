@@ -23,7 +23,7 @@ require ABSPATH . WPINC . '/class-wp-dependency.php';
 // require ABSPATH . WPINC . '/class-wp-dependencies.php';
 
 /** WordPress Scripts Class */
-require ABSPATH . WPINC . '/class-wp-scripts.php';
+// require ABSPATH . WPINC . '/class-wp-scripts.php';
 
 /** WordPress Scripts Functions */
 require ABSPATH . WPINC . '/functions.wp-scripts.php';

@@ -161,7 +161,7 @@ require ABSPATH . WPINC . '/template.php';
 require ABSPATH . WPINC . '/https-detection.php';
 require ABSPATH . WPINC . '/https-migration.php';
 
-require ABSPATH . WPINC . '/class-wp-session-tokens.php';
+// require ABSPATH . WPINC . '/class-wp-session-tokens.php';
 
 require ABSPATH . WPINC . '/user.php';
 

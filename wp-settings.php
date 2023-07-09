@@ -148,6 +148,7 @@ wp_not_installed();
 
 // Load most of WordPress.
 require ABSPATH . WPINC . '/class-wp-walker.php';
+
 require ABSPATH . WPINC . '/capabilities.php';
 
 require ABSPATH . WPINC . '/query.php';
@@ -180,11 +181,15 @@ require ABSPATH . WPINC . '/revision.php';
 require ABSPATH . WPINC . '/post-formats.php';
 require ABSPATH . WPINC . '/post-thumbnail-template.php';
 require ABSPATH . WPINC . '/category.php';
+
 require ABSPATH . WPINC . '/class-walker-category.php';
 require ABSPATH . WPINC . '/class-walker-category-dropdown.php';
+
 require ABSPATH . WPINC . '/category-template.php';
 require ABSPATH . WPINC . '/comment.php';
+
 require ABSPATH . WPINC . '/class-walker-comment.php';
+
 require ABSPATH . WPINC . '/comment-template.php';
 require ABSPATH . WPINC . '/rewrite.php';
 
@@ -196,10 +201,12 @@ require ABSPATH . WPINC . '/cron.php';
 require ABSPATH . WPINC . '/deprecated.php';
 require ABSPATH . WPINC . '/script-loader.php';
 require ABSPATH . WPINC . '/taxonomy.php';
+
 require ABSPATH . WPINC . '/class-wp-taxonomy.php';
 require ABSPATH . WPINC . '/class-wp-term.php';
 require ABSPATH . WPINC . '/class-wp-term-query.php';
 require ABSPATH . WPINC . '/class-wp-tax-query.php';
+
 require ABSPATH . WPINC . '/update.php';
 require ABSPATH . WPINC . '/canonical.php';
 require ABSPATH . WPINC . '/shortcodes.php';
@@ -207,6 +214,7 @@ require ABSPATH . WPINC . '/embed.php';
 
 require ABSPATH . WPINC . '/class-wp-oembed.php';
 require ABSPATH . WPINC . '/class-wp-oembed-controller.php';
+
 require ABSPATH . WPINC . '/media.php';
 require ABSPATH . WPINC . '/http.php';
 

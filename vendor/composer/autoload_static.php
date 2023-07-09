@@ -132,9 +132,8 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_SimplePie_File' => __DIR__ . '/../..' . '/wp-includes/class-wp-simplepie-file.php', // ok
         'WP_SimplePie_Sanitize_KSES' => __DIR__ . '/../..' . '/wp-includes/class-wp-simplepie-sanitize-kses.php', // ok
 
-        'WP_Site' => __DIR__ . '/../..' . '/wp-includes/class-wp-site.php',
-        
-        'WP_Site_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-site-query.php',
+        'WP_Site' => __DIR__ . '/../..' . '/wp-includes/class-wp-site.php', // ok       
+        'WP_Site_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-site-query.php', // ok , for multisite
 
         'WP_Styles' => __DIR__ . '/../..' . '/wp-includes/class-wp-styles.php',
         'WP_Tax_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-tax-query.php',

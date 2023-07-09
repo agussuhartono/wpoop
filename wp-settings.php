@@ -14,7 +14,6 @@
  * @since 1.0.0
  */
 define( 'WPINC', 'wp-includes' );
-define( 'WPVENDOR', 'vendor' );
 
 /**
  * Version information for the current WordPress release.
@@ -31,8 +30,6 @@ define( 'WPVENDOR', 'vendor' );
  * @global string $wp_local_package       Locale code of the package.
  */
 global $wp_version, $wp_db_version, $tinymce_version, $required_php_version, $required_mysql_version, $wp_local_package;
-
-require ABSPATH . WPVENDOR . '/autoload.php';
 
 require ABSPATH . WPINC . '/version.php';
 require ABSPATH . WPINC . '/load.php';

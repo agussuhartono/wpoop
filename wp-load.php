@@ -21,6 +21,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', __DIR__ . '/' );
 }
 
+define( 'WPVENDOR', 'vendor' );
+
+require ABSPATH . WPVENDOR . '/autoload.php';
+
 /*
  * The error_reporting() function can be disabled in php.ini. On systems where that is the case,
  * it's best to add a dummy function to the wp-config.php file, but as this call to the function

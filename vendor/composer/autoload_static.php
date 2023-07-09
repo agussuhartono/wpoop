@@ -103,7 +103,9 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'WP_Network' => __DIR__ . '/../..' . '/wp-includes/class-wp-network.php', // ok
         'WP_Network_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-network-query.php', // ok
-        'WP_Object_Cache' => __DIR__ . '/../..' . '/wp-includes/class-wp-object-cache.php',
+
+        'WP_Object_Cache' => __DIR__ . '/../..' . '/wp-includes/class-wp-object-cache.php', // ok
+        
         'WP_Paused_Extensions_Storage' => __DIR__ . '/../..' . '/wp-includes/class-wp-paused-extensions-storage.php',
                 
         'WP_Post' => __DIR__ . '/../..' . '/wp-includes/class-wp-post.php',        

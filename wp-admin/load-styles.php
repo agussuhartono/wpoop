@@ -12,6 +12,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 	define( 'ABSPATH', dirname( __DIR__ ) . '/' );
 }
 
+define( 'WPVENDOR', 'vendor' );
+
+require ABSPATH . WPVENDOR . '/autoload.php';
+
 define( 'WPINC', 'wp-includes' );
 define( 'WP_CONTENT_DIR', ABSPATH . 'wp-content' );
 
@@ -19,7 +23,9 @@ require ABSPATH . 'wp-admin/includes/noop.php';
 require ABSPATH . WPINC . '/theme.php';
 require ABSPATH . WPINC . '/class-wp-theme-json-resolver.php';
 require ABSPATH . WPINC . '/global-styles-and-settings.php';
+
 require ABSPATH . WPINC . '/script-loader.php';
+
 require ABSPATH . WPINC . '/version.php';
 
 $protocol = $_SERVER['SERVER_PROTOCOL'];

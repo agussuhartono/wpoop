@@ -161,8 +161,8 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_User_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-query.php', // ok
         'WP_User_Request' => __DIR__ . '/../..' . '/wp-includes/class-wp-user-request.php', // ok
         
-        'WP_oEmbed' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed.php',
-        'WP_oEmbed_Controller' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed-controller.php',
+        'WP_oEmbed' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed.php', // ok
+        'WP_oEmbed_Controller' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed-controller.php', // ok
 
         'Walker' => __DIR__ . '/../..' . '/wp-includes/class-wp-walker.php', // ok
         'Walker_Category' => __DIR__ . '/../..' . '/wp-includes/class-walker-category.php', // ok

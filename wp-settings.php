@@ -193,9 +193,6 @@ require ABSPATH . WPINC . '/canonical.php';
 require ABSPATH . WPINC . '/shortcodes.php';
 require ABSPATH . WPINC . '/embed.php';
 
-require ABSPATH . WPINC . '/class-wp-oembed.php';
-require ABSPATH . WPINC . '/class-wp-oembed-controller.php';
-
 require ABSPATH . WPINC . '/media.php';
 require ABSPATH . WPINC . '/http.php';
 

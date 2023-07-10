@@ -170,6 +170,7 @@ require ABSPATH . WPINC . '/link-template.php';
 require ABSPATH . WPINC . '/author-template.php';
 require ABSPATH . WPINC . '/robots-template.php';
 require ABSPATH . WPINC . '/post.php';
+
 require ABSPATH . WPINC . '/class-walker-page.php';
 require ABSPATH . WPINC . '/class-walker-page-dropdown.php';
 
@@ -199,10 +200,10 @@ require ABSPATH . WPINC . '/deprecated.php';
 require ABSPATH . WPINC . '/script-loader.php';
 require ABSPATH . WPINC . '/taxonomy.php';
 
-require ABSPATH . WPINC . '/class-wp-taxonomy.php';
-require ABSPATH . WPINC . '/class-wp-term.php';
-require ABSPATH . WPINC . '/class-wp-term-query.php';
-require ABSPATH . WPINC . '/class-wp-tax-query.php';
+// require ABSPATH . WPINC . '/class-wp-taxonomy.php';
+// require ABSPATH . WPINC . '/class-wp-term.php';
+// require ABSPATH . WPINC . '/class-wp-term-query.php';
+// require ABSPATH . WPINC . '/class-wp-tax-query.php';
 
 require ABSPATH . WPINC . '/update.php';
 require ABSPATH . WPINC . '/canonical.php';

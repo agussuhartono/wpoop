@@ -138,10 +138,10 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'WP_Styles' => __DIR__ . '/../..' . '/wp-includes/class-wp-styles.php', // ok
 
-        'WP_Tax_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-tax-query.php',
-        'WP_Taxonomy' => __DIR__ . '/../..' . '/wp-includes/class-wp-taxonomy.php',
-        'WP_Term' => __DIR__ . '/../..' . '/wp-includes/class-wp-term.php',
-        'WP_Term_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-term-query.php',
+        'WP_Tax_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-tax-query.php', // ok
+        'WP_Taxonomy' => __DIR__ . '/../..' . '/wp-includes/class-wp-taxonomy.php', // ok
+        'WP_Term' => __DIR__ . '/../..' . '/wp-includes/class-wp-term.php', // ok
+        'WP_Term_Query' => __DIR__ . '/../..' . '/wp-includes/class-wp-term-query.php', // ok
 
         // @see Text/Diff 
         'WP_Text_Diff_Renderer_Table' => __DIR__ . '/../..' . '/wp-includes/class-wp-text-diff-renderer-table.php', // OK

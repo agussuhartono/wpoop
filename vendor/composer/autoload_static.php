@@ -147,7 +147,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Text_Diff_Renderer_Table' => __DIR__ . '/../..' . '/wp-includes/class-wp-text-diff-renderer-table.php', // OK
         'WP_Text_Diff_Renderer_inline' => __DIR__ . '/../..' . '/wp-includes/class-wp-text-diff-renderer-inline.php', // OK
         
-        'WP_Textdomain_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-textdomain-registry.php',
+        'WP_Textdomain_Registry' => __DIR__ . '/../..' . '/wp-includes/class-wp-textdomain-registry.php', // ok
 
         'WP_Theme' => __DIR__ . '/../..' . '/wp-includes/class-wp-theme.php', // ok
         
@@ -163,16 +163,16 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         
         'WP_oEmbed' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed.php',
         'WP_oEmbed_Controller' => __DIR__ . '/../..' . '/wp-includes/class-wp-oembed-controller.php',
-        'Walker' => __DIR__ . '/../..' . '/wp-includes/class-wp-walker.php',
-        'Walker_Category' => __DIR__ . '/../..' . '/wp-includes/class-walker-category.php',
-        'Walker_CategoryDropdown' => __DIR__ . '/../..' . '/wp-includes/class-walker-category-dropdown.php',
 
-        'Walker_Comment' => __DIR__ . '/../..' . '/wp-includes/class-walker-comment.php',
-        'Walker_Nav_Menu' => __DIR__ . '/../..' . '/wp-includes/class-walker-nav-menu.php',
+        'Walker' => __DIR__ . '/../..' . '/wp-includes/class-wp-walker.php', // ok
+        'Walker_Category' => __DIR__ . '/../..' . '/wp-includes/class-walker-category.php', // ok
+        'Walker_CategoryDropdown' => __DIR__ . '/../..' . '/wp-includes/class-walker-category-dropdown.php', // ok
 
+        'Walker_Comment' => __DIR__ . '/../..' . '/wp-includes/class-walker-comment.php', // ok
+        'Walker_Nav_Menu' => __DIR__ . '/../..' . '/wp-includes/class-walker-nav-menu.php', // ok
 
-        'Walker_Page' => __DIR__ . '/../..' . '/wp-includes/class-walker-page.php',
-        'Walker_PageDropdown' => __DIR__ . '/../..' . '/wp-includes/class-walker-page-dropdown.php',
+        'Walker_Page' => __DIR__ . '/../..' . '/wp-includes/class-walker-page.php', // ok
+        'Walker_PageDropdown' => __DIR__ . '/../..' . '/wp-includes/class-walker-page-dropdown.php', // ok
 
         '_WP_Dependency' => __DIR__ . '/../..' . '/wp-includes/class-wp-dependency.php',
         '_WP_Editors' => __DIR__ . '/../..' . '/wp-includes/class-wp-editor.php',

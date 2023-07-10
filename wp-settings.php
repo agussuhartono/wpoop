@@ -138,13 +138,13 @@ if ( SHORTINIT ) {
 
 // Load the L10n library.
 require_once ABSPATH . WPINC . '/l10n.php';
-require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
+// require_once ABSPATH . WPINC . '/class-wp-textdomain-registry.php';
 
 // Run the installer if WordPress is not installed.
 wp_not_installed();
 
 // Load most of WordPress.
-require ABSPATH . WPINC . '/class-wp-walker.php';
+// require ABSPATH . WPINC . '/class-wp-walker.php';
 
 require ABSPATH . WPINC . '/capabilities.php';
 
@@ -171,8 +171,8 @@ require ABSPATH . WPINC . '/author-template.php';
 require ABSPATH . WPINC . '/robots-template.php';
 require ABSPATH . WPINC . '/post.php';
 
-require ABSPATH . WPINC . '/class-walker-page.php';
-require ABSPATH . WPINC . '/class-walker-page-dropdown.php';
+// require ABSPATH . WPINC . '/class-walker-page.php';
+// require ABSPATH . WPINC . '/class-walker-page-dropdown.php';
 
 require ABSPATH . WPINC . '/post-template.php';
 require ABSPATH . WPINC . '/revision.php';
@@ -180,13 +180,13 @@ require ABSPATH . WPINC . '/post-formats.php';
 require ABSPATH . WPINC . '/post-thumbnail-template.php';
 require ABSPATH . WPINC . '/category.php';
 
-require ABSPATH . WPINC . '/class-walker-category.php';
-require ABSPATH . WPINC . '/class-walker-category-dropdown.php';
+// require ABSPATH . WPINC . '/class-walker-category.php';
+// require ABSPATH . WPINC . '/class-walker-category-dropdown.php';
 
 require ABSPATH . WPINC . '/category-template.php';
 require ABSPATH . WPINC . '/comment.php';
 
-require ABSPATH . WPINC . '/class-walker-comment.php';
+// require ABSPATH . WPINC . '/class-walker-comment.php';
 
 require ABSPATH . WPINC . '/comment-template.php';
 require ABSPATH . WPINC . '/rewrite.php';

@@ -5295,10 +5295,6 @@ function wp_ajax_health_check_dotorg_communication() {
 		wp_send_json_error();
 	}
 
-	if ( ! class_exists( 'WP_Site_Health' ) ) {
-		require_once ABSPATH . 'wp-admin/includes/class-wp-site-health.php';
-	}
-
 	$site_health = WP_Site_Health::get_instance();
 	wp_send_json_success( $site_health->get_test_dotorg_communication() );
 }
@@ -5328,10 +5324,6 @@ function wp_ajax_health_check_background_updates() {
 		wp_send_json_error();
 	}
 
-	if ( ! class_exists( 'WP_Site_Health' ) ) {
-		require_once ABSPATH . 'wp-admin/includes/class-wp-site-health.php';
-	}
-
 	$site_health = WP_Site_Health::get_instance();
 	wp_send_json_success( $site_health->get_test_background_updates() );
 }
@@ -5359,10 +5351,6 @@ function wp_ajax_health_check_loopback_requests() {
 
 	if ( ! current_user_can( 'view_site_health_checks' ) ) {
 		wp_send_json_error();
-	}
-
-	if ( ! class_exists( 'WP_Site_Health' ) ) {
-		require_once ABSPATH . 'wp-admin/includes/class-wp-site-health.php';
 	}
 
 	$site_health = WP_Site_Health::get_instance();

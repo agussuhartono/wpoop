@@ -687,6 +687,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'WP_Site_Health' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-health.php',
         'WP_Site_Health_Auto_Updates' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-health-auto-updates.php',
+
         'WP_Site_Icon' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-icon.php',
 
         'WP_Terms_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-terms-list-table.php',

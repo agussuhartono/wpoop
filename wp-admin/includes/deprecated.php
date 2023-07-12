@@ -768,9 +768,6 @@ function wp_tiny_mce( $teeny = false, $settings = false ) {
 
 	static $num = 1;
 
-	if ( ! class_exists( '_WP_Editors', false ) )
-		require_once ABSPATH . WPINC . '/class-wp-editor.php';
-
 	$editor_id = 'content' . $num++;
 
 	$set = array(

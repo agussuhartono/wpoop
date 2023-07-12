@@ -177,7 +177,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         '_WP_Dependency' => __DIR__ . '/../..' . '/wp-includes/class-wp-dependency.php', // ok
         '_WP_Editors' => __DIR__ . '/../..' . '/wp-includes/class-wp-editor.php', // ok
 
-        'wp_xmlrpc_server' => __DIR__ . '/../..' . '/wp-includes/class-wp-xmlrpc-server.php',
+        'wp_xmlrpc_server' => __DIR__ . '/../..' . '/wp-includes/class-wp-xmlrpc-server.php', // ok
         'wpdb' => __DIR__ . '/../..' . '/wp-includes/class-wpdb.php',
 
         //===================================

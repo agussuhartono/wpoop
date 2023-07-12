@@ -197,9 +197,9 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         
 
         // 3 th Party : PHPMailer
-        'PHPMailer\\PHPMailer\\Exception' => __DIR__ . '/../..' . '/wp-includes/PHPMailer/Exception.php',
-        'PHPMailer\\PHPMailer\\PHPMailer' => __DIR__ . '/../..' . '/wp-includes/PHPMailer/PHPMailer.php',
-        'PHPMailer\\PHPMailer\\SMTP' => __DIR__ . '/../..' . '/wp-includes/PHPMailer/SMTP.php',
+        'PHPMailer\\PHPMailer\\Exception' => __DIR__ . '/../..' . '/wp-includes/PHPMailer/Exception.php', // ok
+        'PHPMailer\\PHPMailer\\PHPMailer' => __DIR__ . '/../..' . '/wp-includes/PHPMailer/PHPMailer.php', // ok
+        'PHPMailer\\PHPMailer\\SMTP' => __DIR__ . '/../..' . '/wp-includes/PHPMailer/SMTP.php', // ok
 
         // 3 th Party : POMO
         'Gettext_Translations' => __DIR__ . '/../..' . '/wp-includes/pomo/translations.php',        

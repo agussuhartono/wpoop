@@ -619,7 +619,6 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'wp_atom_server' => __DIR__ . '/../..' . '/wp-includes/pluggable-deprecated.php',
 
-
         // =========== WP-ADMIN =============
 
         'Automatic_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-automatic-upgrader-skin.php',
@@ -630,8 +629,6 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'Core_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-core-upgrader.php',
         'Custom_Background' => __DIR__ . '/../..' . '/wp-admin/includes/class-custom-background.php',
         'Custom_Image_Header' => __DIR__ . '/../..' . '/wp-admin/includes/class-custom-image-header.php',
-
-
         
         'File_Upload_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-file-upload-upgrader.php',
 
@@ -685,7 +682,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'WP_Screen' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-screen.php',
 
-        'WP_Site_Health' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-health.php',
+        'WP_Site_Health' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-health.php', // ok
         'WP_Site_Health_Auto_Updates' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-health-auto-updates.php',
 
         'WP_Site_Icon' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-site-icon.php',

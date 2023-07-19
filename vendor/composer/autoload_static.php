@@ -194,8 +194,6 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'IXR_Server' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-server.php', // ok
         'IXR_Value' => __DIR__ . '/../..' . '/wp-includes/IXR/class-IXR-value.php', // ok
 
-        
-
         // 3 th Party : PHPMailer
         'PHPMailer\\PHPMailer\\Exception' => __DIR__ . '/../..' . '/wp-includes/PHPMailer/Exception.php', // ok
         'PHPMailer\\PHPMailer\\PHPMailer' => __DIR__ . '/../..' . '/wp-includes/PHPMailer/PHPMailer.php', // ok
@@ -206,6 +204,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'MO' => __DIR__ . '/../..' . '/wp-includes/pomo/mo.php',
         'NOOP_Translations' => __DIR__ . '/../..' . '/wp-includes/pomo/translations.php',
         'PO' => __DIR__ . '/../..' . '/wp-includes/pomo/po.php',
+        
         'POMO_CachedFileReader' => __DIR__ . '/../..' . '/wp-includes/pomo/streams.php',
         'POMO_CachedIntFileReader' => __DIR__ . '/../..' . '/wp-includes/pomo/streams.php',
         'POMO_FileReader' => __DIR__ . '/../..' . '/wp-includes/pomo/streams.php',
@@ -216,8 +215,6 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'Translation_Entry' => __DIR__ . '/../..' . '/wp-includes/pomo/entry.php',
         'Translations' => __DIR__ . '/../..' . '/wp-includes/pomo/translations.php',
-
-
 
         // 3 th Party : SODIUM
         'ParagonIE\\Sodium\\Compat' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/namespaced/Compat.php',
@@ -246,6 +243,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'ParagonIE\\Sodium\\Core\\Xsalsa20' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/namespaced/Core/Xsalsa20.php',
         'ParagonIE\\Sodium\\Crypto' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/namespaced/Crypto.php',
         'ParagonIE\\Sodium\\File' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/namespaced/File.php',
+        
         'ParagonIE_Sodium_Compat' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/src/Compat.php',
         'ParagonIE_Sodium_Core32_BLAKE2b' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/src/Core32/BLAKE2b.php',
         'ParagonIE_Sodium_Core32_ChaCha20' => __DIR__ . '/../..' . '/wp-includes/sodium_compat/src/Core32/ChaCha20.php',

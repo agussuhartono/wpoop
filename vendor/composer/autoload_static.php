@@ -626,8 +626,10 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'Automatic_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-automatic-upgrader-skin.php', // OK
         'Bulk_Plugin_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-bulk-plugin-upgrader-skin.php', // OK
         'Bulk_Theme_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-bulk-theme-upgrader-skin.php', // OK
-        'Bulk_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-bulk-upgrader-skin.php',
+        'Bulk_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-bulk-upgrader-skin.php', // OK
+        
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
+        
         'Core_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-core-upgrader.php',
         'Custom_Background' => __DIR__ . '/../..' . '/wp-admin/includes/class-custom-background.php',
         'Custom_Image_Header' => __DIR__ . '/../..' . '/wp-admin/includes/class-custom-image-header.php',

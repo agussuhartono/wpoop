@@ -2877,8 +2877,7 @@ function _custom_header_background_just_in_time() {
 		$args = get_theme_support( 'custom-background' );
 		add_action( 'wp_head', $args[0]['wp-head-callback'] );
 
-		if ( is_admin() ) {
-			require_once ABSPATH . 'wp-admin/includes/class-custom-background.php';
+		if ( is_admin() ) {			
 			$custom_background = new Custom_Background( $args[0]['admin-head-callback'], $args[0]['admin-preview-callback'] );
 		}
 	}

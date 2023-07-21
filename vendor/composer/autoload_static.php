@@ -640,7 +640,12 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'Language_Pack_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-language-pack-upgrader.php', // OK
         'Language_Pack_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-language-pack-upgrader-skin.php', // OK
 
+        /**
+         * the library complicated: constants, class, function in the 1 file.
+         * @todo need refactoring in the future
+         */
         'PclZip' => __DIR__ . '/../..' . '/wp-admin/includes/class-pclzip.php',
+
         'Plugin_Installer_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-plugin-installer-skin.php',
         'Plugin_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-plugin-upgrader.php',
         'Plugin_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-plugin-upgrader-skin.php',

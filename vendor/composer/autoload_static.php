@@ -654,7 +654,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'Theme_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-upgrader.php', // OK
         'Theme_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-upgrader-skin.php', // OK
 
-        'WP_Ajax_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-ajax-upgrader-skin.php',
+        'WP_Ajax_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-ajax-upgrader-skin.php', // OK
         'WP_Application_Passwords_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-application-passwords-list-table.php',
         'WP_Automatic_Updater' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-automatic-updater.php',
 

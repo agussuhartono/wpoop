@@ -650,7 +650,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'Plugin_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-plugin-upgrader.php', // OK
         'Plugin_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-plugin-upgrader-skin.php', // OK
 
-        'Theme_Installer_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-installer-skin.php',
+        'Theme_Installer_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-installer-skin.php', // OK
         'Theme_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-upgrader.php',
         'Theme_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-theme-upgrader-skin.php',
 

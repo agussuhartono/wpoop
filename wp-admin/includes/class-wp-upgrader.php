@@ -15,9 +15,6 @@ require_once ABSPATH . 'wp-admin/includes/class-wp-upgrader-skin.php';
 /** Theme_Upgrader_Skin class */
 require_once ABSPATH . 'wp-admin/includes/class-theme-upgrader-skin.php';
 
-/** Theme_Installer_Skin class */
-require_once ABSPATH . 'wp-admin/includes/class-theme-installer-skin.php';
-
 /** WP_Ajax_Upgrader_Skin class */
 require_once ABSPATH . 'wp-admin/includes/class-wp-ajax-upgrader-skin.php';
 

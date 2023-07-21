@@ -944,8 +944,5 @@ class WP_Upgrader {
 	}
 }
 
-/** Theme_Upgrader class */
-require_once ABSPATH . 'wp-admin/includes/class-theme-upgrader.php';
-
 /** WP_Automatic_Updater class */
 require_once ABSPATH . 'wp-admin/includes/class-wp-automatic-updater.php';

@@ -635,7 +635,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'Custom_Background' => __DIR__ . '/../..' . '/wp-admin/includes/class-custom-background.php', // OK
         'Custom_Image_Header' => __DIR__ . '/../..' . '/wp-admin/includes/class-custom-image-header.php', // OK
         
-        'File_Upload_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-file-upload-upgrader.php',
+        'File_Upload_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-file-upload-upgrader.php',  // OK
 
         'Language_Pack_Upgrader' => __DIR__ . '/../..' . '/wp-admin/includes/class-language-pack-upgrader.php',
         'Language_Pack_Upgrader_Skin' => __DIR__ . '/../..' . '/wp-admin/includes/class-language-pack-upgrader-skin.php',

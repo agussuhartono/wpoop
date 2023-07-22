@@ -662,8 +662,8 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         // not found where the file load
         'WP_Comments_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-comments-list-table.php',
-        
-        'WP_Community_Events' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-community-events.php',
+
+        'WP_Community_Events' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-community-events.php', // OK
 
         'WP_Debug_Data' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-debug-data.php',
 

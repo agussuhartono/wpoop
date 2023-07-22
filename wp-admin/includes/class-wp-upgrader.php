@@ -937,6 +937,3 @@ class WP_Upgrader {
 		return delete_option( $lock_name . '.lock' );
 	}
 }
-
-/** WP_Automatic_Updater class */
-require_once ABSPATH . 'wp-admin/includes/class-wp-automatic-updater.php';

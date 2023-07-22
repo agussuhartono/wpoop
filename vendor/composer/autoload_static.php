@@ -658,7 +658,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         
         'WP_Application_Passwords_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-application-passwords-list-table.php', // OK
         
-        'WP_Automatic_Updater' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-automatic-updater.php',
+        'WP_Automatic_Updater' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-automatic-updater.php', // OK
 
         'WP_Comments_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-comments-list-table.php',
         'WP_Community_Events' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-community-events.php',

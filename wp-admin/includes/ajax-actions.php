@@ -5393,10 +5393,6 @@ function wp_ajax_health_check_get_sizes() {
 		wp_send_json_error();
 	}
 
-	if ( ! class_exists( 'WP_Debug_Data' ) ) {
-		require_once ABSPATH . 'wp-admin/includes/class-wp-debug-data.php';
-	}
-
 	$sizes_data = WP_Debug_Data::get_sizes();
 	$all_sizes  = array( 'raw' => 0 );
 

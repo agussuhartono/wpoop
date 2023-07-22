@@ -665,7 +665,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'WP_Community_Events' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-community-events.php', // OK
 
-        'WP_Debug_Data' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-debug-data.php',
+        'WP_Debug_Data' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-debug-data.php', // OK
 
         'WP_Filesystem_Base' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-base.php',
         'WP_Filesystem_Direct' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-direct.php',

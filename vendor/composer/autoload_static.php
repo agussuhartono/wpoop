@@ -683,7 +683,11 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         'WP_Filesystem_SSH2' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-ssh2.php',
         'WP_Filesystem_ftpsockets' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-ftpsockets.php',
 
-        'WP_Importer' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-importer.php',
+        /**
+         * Base importer call by eksternal importer
+         */
+        'WP_Importer' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-importer.php', // OK
+
         'WP_Internal_Pointers' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-internal-pointers.php',
         'WP_Links_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-links-list-table.php',
         'WP_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-list-table.php',

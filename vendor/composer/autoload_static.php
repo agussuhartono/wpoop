@@ -688,7 +688,7 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
          */
         'WP_Importer' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-importer.php', // OK
 
-        'WP_Internal_Pointers' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-internal-pointers.php',
+        'WP_Internal_Pointers' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-internal-pointers.php', // OK
         'WP_Links_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-links-list-table.php',
         'WP_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-list-table.php',
 

@@ -670,7 +670,14 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
 
         'WP_Debug_Data' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-debug-data.php', // OK
 
-        'WP_Filesystem_Base' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-base.php',
+        'WP_Filesystem_Base' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-base.php', // OK
+        /**
+         * dinamic load by wp-filesystem
+         * 
+         * @see file.php function WP_Filesystem
+         * 
+         *      $abstraction_file = apply_filters( 'filesystem_method_file', ABSPATH . 'wp-admin/includes/class-wp-filesystem-' . $method . '.php', $method );
+         */
         'WP_Filesystem_Direct' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-direct.php',
         'WP_Filesystem_FTPext' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-ftpext.php',
         'WP_Filesystem_SSH2' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-filesystem-ssh2.php',

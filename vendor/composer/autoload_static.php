@@ -660,8 +660,11 @@ class ComposerStaticInit1a1923b433bd2224dbfd6b2925e4f639
         
         'WP_Automatic_Updater' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-automatic-updater.php', // OK
 
-        // not found where the file load
-        'WP_Comments_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-comments-list-table.php',
+        /**
+         * not found where the file load, maybe use dinamic load
+         * @todo need learn more
+         **/ 
+        'WP_Comments_List_Table' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-comments-list-table.php', // OK
 
         'WP_Community_Events' => __DIR__ . '/../..' . '/wp-admin/includes/class-wp-community-events.php', // OK
 
